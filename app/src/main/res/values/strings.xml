@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">warInstructions</string>
+    <string name="content">Contenido</string>
+    <string name="exit">Salir</string>
+    <string name="index">Índice</string>
+    <string name="roman_four">IV</string>
+    <string name="index_decoration">.-</string>
+</resources>

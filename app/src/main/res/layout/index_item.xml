@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:elevation="@dimen/space_small"
+                                   app:cardCornerRadius="@dimen/space_small"
+>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+
+    >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/roman_four"
+                  android:textColor="@color/black"
+                  android:id="@+id/tvNumberIndex"
+                  android:fontFamily="@font/crimson_text_bold"
+                  android:layout_marginTop="@dimen/space_medium"
+                  android:layout_marginStart="@dimen/space_medium"
+
+                  android:textSize="@dimen/medium_big_font"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/index_decoration"
+                  android:textColor="@color/black"
+                  android:layout_marginTop="@dimen/space_medium"
+                  android:layout_marginEnd="@dimen/space_medium"
+                  android:fontFamily="@font/crimson_text_bold"
+                  android:textSize="@dimen/big_font"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="La patria y la bandera."
+                  android:textColor="@color/black"
+                  android:id="@+id/tvTitle"
+                  android:fontFamily="@font/crimson_text_bold"
+                  android:layout_marginTop="@dimen/space_medium"
+                  android:textSize="@dimen/medium_big_font"
+        />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
