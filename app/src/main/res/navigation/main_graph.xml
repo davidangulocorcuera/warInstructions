@@ -5,5 +5,9 @@
             app:startDestination="@id/homeFragment">
 
     <fragment android:id="@+id/homeFragment" android:name="com.cloudfy.warInstructions.home.HomeFragment"
-              android:label="fragment_home" tools:layout="@layout/fragment_home"/>
+              android:label="fragment_home" tools:layout="@layout/fragment_home">
+        <action android:id="@+id/goToIndex" app:destination="@id/indexFragment" app:popUpTo="@id/homeFragment"/>
+    </fragment>
+    <fragment android:id="@+id/indexFragment" android:name="com.cloudfy.warInstructions.index.IndexFragment"
+              android:label="fragment_index" tools:layout="@layout/fragment_index"/>
 </navigation>

@@ -6,10 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseRecyclerAdapter
-import com.cloudfy.warInstructions.model.Chapter
+import com.cloudfy.warInstructions.entities.Chapter
+import kotlinx.android.synthetic.main.index_item.view.*
 
 
-    class IndexAdapter(val items: ArrayList<Chapter>  = ArrayList(), val activity: Activity, var onClick: (Chapter) -> Unit) : BaseRecyclerAdapter<Chapter, IndexAdapter.ViewHolder>() {
+class IndexAdapter(val items: ArrayList<Chapter>, val activity: Activity, var onClick: (Chapter) -> Unit) : BaseRecyclerAdapter<Chapter, IndexAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context)
             .inflate(R.layout.index_item, parent, false)
@@ -33,7 +34,7 @@ import com.cloudfy.warInstructions.model.Chapter
         }
 
         fun setValues() {
-            //view.tvFriendUsername.text = current.cardTitle
+            view.tvNumberIndex.text = "I"
 
         }
 
