@@ -9,5 +9,7 @@
         <action android:id="@+id/goToIndex" app:destination="@id/indexFragment" app:popUpTo="@id/homeFragment"/>
     </fragment>
     <fragment android:id="@+id/indexFragment" android:name="com.cloudfy.warInstructions.index.IndexFragment"
-              android:label="fragment_index" tools:layout="@layout/fragment_index"/>
+              android:label="fragment_index" tools:layout="@layout/fragment_index">
+        <argument android:name="chapters" app:argType="com.cloudfy.warInstructions.entities.Chapter[]"/>
+    </fragment>
 </navigation>

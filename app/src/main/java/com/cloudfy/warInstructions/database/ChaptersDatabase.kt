@@ -1,18 +1,25 @@
-package com.cloudfy.warInstructions.model
+package com.cloudfy.warInstructions.database
 
 import android.content.Context
 import androidx.room.Database
 import com.cloudfy.warInstructions.entities.Chapter
-import android.os.AsyncTask
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
+import com.cloudfy.warInstructions.content.ChaptersManager
+import com.cloudfy.warInstructions.model.ChapterDao
+import com.cloudfy.warInstructions.model.Converters
+import org.jetbrains.anko.doAsync
 
 
 @Database(entities = [Chapter::class], version = 1)
 @TypeConverters(Converters::class)
 abstract class ChaptersDatabase : RoomDatabase() {
+
+    init {
+        ChaptersManager.addChapters()
+    }
 
     abstract fun chapterDao(): ChapterDao
 
@@ -20,7 +27,6 @@ abstract class ChaptersDatabase : RoomDatabase() {
         lateinit var INSTANCE: ChaptersDatabase
 
         fun getDatabase(context: Context): ChaptersDatabase {
-
             synchronized(ChaptersDatabase::class.java) {
                 INSTANCE = Room.databaseBuilder(
                     context.applicationContext,
@@ -30,34 +36,19 @@ abstract class ChaptersDatabase : RoomDatabase() {
                     .addCallback(object : RoomDatabase.Callback() {
                         override fun onOpen(db: SupportSQLiteDatabase) {
                             super.onOpen(db)
-                            ChaptersAsyncTask().execute()
+                            doAsync {
+                                INSTANCE.chapterDao().deleteAll()
+                                INSTANCE.chapterDao().insertAll(ChaptersManager.chapters)
+                            }
                         }
                     })
                     .build()
             }
-
             return INSTANCE
         }
 
     }
 
-    private class ChaptersAsyncTask internal constructor() : AsyncTask<Void, Void, Void>() {
 
-        private val mAsyncTaskDao: ChapterDao = INSTANCE.chapterDao()
-
-        override fun doInBackground(vararg voids: Void): Void? {
-            val data: ArrayList<Chapter> = ArrayList()
-            val firstClassroom = Chapter(0, "DAMP", 24, ArrayList())
-            data.add(firstClassroom)
-            val secondClassroom = Chapter(0, "DAMP", 24, ArrayList())
-            data.add(secondClassroom)
-            val thirdClassroom = Chapter(0, "DAMP", 24, ArrayList())
-            data.add(thirdClassroom)
-            mAsyncTaskDao.deleteAll()
-            mAsyncTaskDao.insertAll(data)
-            return null
-
-        }
-    }
 
 }
