@@ -8,7 +8,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.cloudfy.warInstructions.content.ChaptersManager
-import com.cloudfy.warInstructions.model.ChapterDao
+import com.cloudfy.warInstructions.model.ChaptersDao
 import com.cloudfy.warInstructions.model.Converters
 import org.jetbrains.anko.doAsync
 
@@ -21,7 +21,7 @@ abstract class ChaptersDatabase : RoomDatabase() {
         ChaptersManager.addChapters()
     }
 
-    abstract fun chapterDao(): ChapterDao
+    abstract fun chapterDao(): ChaptersDao
 
     companion object {
         lateinit var INSTANCE: ChaptersDatabase

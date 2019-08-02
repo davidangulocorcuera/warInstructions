@@ -7,7 +7,7 @@ import androidx.room.Query
 import com.cloudfy.warInstructions.entities.Chapter
 
 @Dao
-interface ChapterDao {
+interface ChaptersDao {
     @Insert
     fun insert(chapter: Chapter)
 

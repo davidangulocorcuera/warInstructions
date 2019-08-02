@@ -11,7 +11,7 @@ object ChaptersManager {
         title = "La patría y la bandera"
         , index = 1
         , subchapters = arrayListOf(
-            Subchapter(title = "La patría y la bandera"),
+            Subchapter(title = "La patría y la bandera", content = ""),
             Subchapter(title = "El amor a la patría"),
             Subchapter(title = "Deberes del hombre para con la patría"),
             Subchapter(title = "La bandera")

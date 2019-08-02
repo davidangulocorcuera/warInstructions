@@ -1,31 +1,39 @@
 package com.cloudfy.warInstructions
 
 import android.app.Application
-import androidx.lifecycle.LiveData
+import android.content.Context
+import android.util.Base64
+import android.util.Log
+import androidx.annotation.Nullable
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
-import com.cloudfy.warInstructions.entities.Chapter
-import com.cloudfy.warInstructions.model.ChapterDao
+import com.cloudfy.warInstructions.base.BaseActivity
 import com.cloudfy.warInstructions.database.ChaptersDatabase
-import org.jetbrains.anko.doAsync
+import com.cloudfy.warInstructions.database.ChaptersDatabase.Companion.getDatabase
+import com.cloudfy.warInstructions.entities.Chapter
+import com.cloudfy.warInstructions.model.ChaptersRepository
 
-class MainViewModel(var application: Application): ViewModel() {
+ class MainViewModel : ViewModel() {
 
-    private lateinit var chaptersDao: ChapterDao
-    private lateinit var mAllChapters: LiveData<List<Chapter>>
+    val chapters = MutableLiveData<ArrayList<Chapter>>()
 
-    init {
-        val db: ChaptersDatabase =
-            ChaptersDatabase.getDatabase(application);
-        val chaptersDao = db.chapterDao()
-        val mAllChapters = chaptersDao.getAllChapters()
-    }
-    fun getAllChapters(): LiveData<List<Chapter>> {
-        return mAllChapters;
-    }
-    fun insertAsynTask(chapter: Chapter) {
-        doAsync {
-            chaptersDao.insert(chapter)
+    val chaptersResponse: MutableLiveData<ArrayList<Chapter>> by lazy {
+        MutableLiveData<ArrayList<Chapter>>().also {
+            chapters
         }
+    }
+
+
+    fun getAllChapters(application: Application, activity: BaseActivity){
+        ChaptersDatabase.getDatabase(application).chapterDao().getAllChapters()
+            .observe(activity,
+                Observer<List<Chapter>> {
+                    it?.let { chapters ->
+                        this.chaptersResponse.postValue(ArrayList(chapters))
+                    }
+                })
     }
 
 }
