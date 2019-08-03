@@ -20,19 +20,21 @@
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:text="@string/roman_four"
-                      android:textColor="@color/black"
+                      android:textColor="@color/green"
                       android:id="@+id/tvNumberIndex"
-                      android:fontFamily="@font/crimson_text_bold"
                       android:layout_marginStart="@dimen/space_medium"
+                      android:fontFamily="@font/crimson_text_regular"
                       android:textSize="@dimen/medium_font"
+                      android:layout_gravity="center_vertical"
             />
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:text="@string/index_decoration"
-                      android:textColor="@color/black"
+                      android:textColor="@color/green"
                       android:layout_marginStart="@dimen/space_small"
                       android:layout_marginEnd="@dimen/space_medium"
-                      android:fontFamily="@font/crimson_text_bold"
+                      android:layout_gravity="center_vertical"
+                      android:fontFamily="@font/crimson_text_regular"
                       android:textSize="@dimen/medium_font"
             />
             <TextView android:layout_width="wrap_content"
@@ -40,13 +42,13 @@
                       android:text="La patria y la bandera."
                       android:textColor="@color/black"
                       android:id="@+id/tvTitle"
-                      android:fontFamily="@font/crimson_text_bold"
+                      android:fontFamily="@font/crimson_text_regular"
                       android:textSize="@dimen/medium_font"
-                      android:layout_gravity="center"/>
+                      android:layout_gravity="center_vertical"/>
         </LinearLayout>
         <View android:layout_width="match_parent"
-              android:layout_height="2dp"
-              android:background="@color/black"/>
+              android:layout_height="1dp"
+              android:background="@color/transparentBlack"/>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

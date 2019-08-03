@@ -1,6 +1,7 @@
 package com.cloudfy.warInstructions.content
 
 import com.cloudfy.warInstructions.entities.Chapter
+import com.cloudfy.warInstructions.entities.Paragraph
 import com.cloudfy.warInstructions.entities.Subchapter
 
 object ChaptersManager {
@@ -11,7 +12,16 @@ object ChaptersManager {
         title = "La patría y la bandera"
         , index = 1
         , subchapters = arrayListOf(
-            Subchapter(title = "La patría y la bandera", index = 1),
+            Subchapter(title = "La patría y la bandera", index = 1,
+                content = arrayListOf(
+                 Paragraph(content = "La patria es el pais en que se ha nacido. Para los españoles, la patria es España, con todos los territorios que la integran. No es solamente el pedazo de tierra que los vió nacer: es toda la Nación española."),
+                    Paragraph(content = "Forman parte también de esta Patria lo buques de guerra o mercantes que ostenten la bandera española, aún cuando naveguen por los mares más lejanos"),
+                    Paragraph(content = "La patria es todo el raudal de la tradición de un pueblo y todo el firmamento de su esperanza (Maura.)"),
+                    Paragraph(content = "La patria es la imagen de una vasta familia (Campoamor.)"),
+                    Paragraph(content = "España es una nación toda gloria e ideal, entusiasmo vibrante y noble bravura. (Andrés Piquemal, militar francés.)"),
+                    Paragraph(content = "Desde que he visto al español en su patria comprendo mejor su orgullo, su frugalidad, su templanza y su entereza. (Washington Irving, literario norteamericano.)")
+                    )
+                ),
             Subchapter(title = "El amor a la patría", index = 2),
             Subchapter(title = "Deberes del hombre para con la patría", index = 3),
             Subchapter(title = "La bandera", index = 4)

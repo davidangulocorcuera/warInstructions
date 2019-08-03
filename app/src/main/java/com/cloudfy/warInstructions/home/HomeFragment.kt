@@ -11,7 +11,6 @@ import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.entities.Chapter
 import kotlinx.android.synthetic.main.fragment_home.*
-import androidx.appcompat.app.AppCompatActivity
 
 
 

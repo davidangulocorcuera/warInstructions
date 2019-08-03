@@ -20,6 +20,12 @@
               android:label="fragment_sub_index" tools:layout="@layout/fragment_sub_index">
         <argument android:name="subChapters" app:argType="com.cloudfy.warInstructions.entities.Subchapter[]"/>
         <argument android:name="title" app:argType="string"/>
+        <action android:id="@+id/goToContentFragment" app:destination="@id/contentFragment"/>
+    </fragment>
+    <fragment android:id="@+id/contentFragment" android:name="com.cloudfy.warInstructions.content.ContentFragment"
+              android:label="fragment_content" tools:layout="@layout/fragment_content">
+        <argument android:name="paragraphs" app:argType="com.cloudfy.warInstructions.entities.Paragraph[]"/>
+        <argument android:name="title" app:argType="string"/>
     </fragment>
 
 </navigation>

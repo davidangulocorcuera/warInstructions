@@ -34,7 +34,7 @@
                     android:padding="@dimen/space_small"
                     android:textAllCaps="false"
                     android:clickable="true"
-                    android:fontFamily="@font/crimson_text_bold"
+                    android:fontFamily="@font/crimson_text_regular"
                     android:focusable="true"/>
 
             <Button android:layout_width="match_parent"
@@ -48,7 +48,7 @@
                     android:padding="@dimen/space_small"
                     android:textAllCaps="false"
                     android:clickable="true"
-                    android:fontFamily="@font/crimson_text_bold"
+                    android:fontFamily="@font/crimson_text_regular"
                     android:focusable="true"/>
 
 
