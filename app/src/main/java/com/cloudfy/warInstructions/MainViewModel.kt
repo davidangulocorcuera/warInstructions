@@ -15,7 +15,7 @@ import com.cloudfy.warInstructions.database.ChaptersDatabase.Companion.getDataba
 import com.cloudfy.warInstructions.entities.Chapter
 import com.cloudfy.warInstructions.model.ChaptersRepository
 
- class MainViewModel : ViewModel() {
+class MainViewModel : ViewModel() {
 
     val chapters = MutableLiveData<ArrayList<Chapter>>()
 
@@ -26,7 +26,7 @@ import com.cloudfy.warInstructions.model.ChaptersRepository
     }
 
 
-    fun getAllChapters(application: Application, activity: BaseActivity){
+    fun getAllChapters(application: Application, activity: BaseActivity) {
         ChaptersDatabase.getDatabase(application).chapterDao().getAllChapters()
             .observe(activity,
                 Observer<List<Chapter>> {

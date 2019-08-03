@@ -1,16 +1,14 @@
 package com.cloudfy.warInstructions.base
 
-import android.content.Context
 import android.os.Bundle
 import android.view.View
-import android.view.inputmethod.InputMethodManager
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.utils.setVisible
 
 
-abstract class BaseActivity : AppCompatActivity(), MainMVP.View {
+abstract class BaseActivity : AppCompatActivity() {
 
     var LOG_TAG = BaseActivity::class.java.simpleName
     fun getTag(): String {
@@ -27,19 +25,6 @@ abstract class BaseActivity : AppCompatActivity(), MainMVP.View {
         val layoutId = onCreateViewId()
         if (layoutId != 0) {
             setContentView(layoutId)
-        }
-    }
-
-
-    override fun hideKeyboard() {
-        val view = this.currentFocus
-        hideKeyboard(view)
-    }
-
-    fun hideKeyboard(view: View?) {
-        if (view != null) {
-            val imm = this.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.hideSoftInputFromWindow(view.windowToken, 0)
         }
     }
 

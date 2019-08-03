@@ -33,8 +33,9 @@ class IndexAdapter(val items: ArrayList<Chapter>, val activity: Activity, var on
 
         }
 
-        fun setValues() {
-            view.tvNumberIndex.text = "I"
+        private fun setValues() {
+            view.tvNumberIndex.text = current.index.toString()
+            view.tvTitle.text = current.title
 
         }
 

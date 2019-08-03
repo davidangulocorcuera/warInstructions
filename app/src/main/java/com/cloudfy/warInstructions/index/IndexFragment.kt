@@ -4,11 +4,13 @@ package com.cloudfy.warInstructions.index
 import android.util.Log
 import android.view.View
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.database.ChaptersDatabase
 import com.cloudfy.warInstructions.entities.Chapter
+import com.cloudfy.warInstructions.home.HomeFragmentArgs
 import kotlinx.android.synthetic.main.fragment_index.*
 
 
@@ -24,6 +26,12 @@ class IndexFragment : BaseFragment() {
 
     override fun viewCreated(view: View?) {
         initList()
+        val args: IndexFragmentArgs by navArgs()
+        chapters = ArrayList(args.chapters.toList())
+        chapters.forEach {chapter ->
+            Log.v("taag", chapter.title)
+        }
+        indexAdapter.addAll(chapters)
         }
     private fun initList() {
         val layoutManager = GridLayoutManager(activity, 1)

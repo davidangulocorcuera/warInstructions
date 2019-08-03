@@ -7,12 +7,12 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
     <fragment
-            android:id="@+id/navHostActivity"
+            android:id="@+id/navFragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:defaultNavHost="true"
-            app:navGraph="@navigation/main_graph" />
+    />
     <LinearLayout
             android:id="@+id/progressContainer"
             android:layout_width="match_parent"
