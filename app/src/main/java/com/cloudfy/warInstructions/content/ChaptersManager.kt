@@ -22,7 +22,20 @@ object ChaptersManager {
                     Paragraph(content = "Desde que he visto al español en su patria comprendo mejor su orgullo, su frugalidad, su templanza y su entereza. (Washington Irving, literario norteamericano.)")
                     )
                 ),
-            Subchapter(title = "El amor a la patría", index = 2),
+            Subchapter(title = "El amor a la patría", index = 2,
+                content = arrayListOf(
+                    Paragraph(content = "No puede concebirse la existencia de un hombre que no ame a su Patria. El que no es capaz de amarla lo es de aborrecer a su madre; es indigno de pertener a la especie humana"),
+                    Paragraph(content = "Los pueblos más incultos de la Tierra, las razas más desdichadas, desde que el mundo existe , han experimentado el impulso irresistible del patriotismo. Aún aquellos que viven en tierras estériles " +
+                        "e ingratas, bajo climas crudos aislados del resto de los mortales, luchando de continuo con el hambre, aman apasionadamente a su Patria. Son como aquellos hijos" +
+                        "a quienes el amor a su madre no les permite ver sus defectos."),
+                    Paragraph(content = "El patriotismo es un sentimiento fuerte y dulce que espontáneamente siente todo ciudadano digno de este nombre"),
+                    Paragraph(content = "Vuestro pueblo forma parte integrante de vuestra Patria, y ese sentimiento de amor que experimentaís ha d eimpulsaros a conservar esa virtud que se llama patriotismo, la más esencial" +
+                        "en todo buen ciudadano"),
+                    Paragraph(content = "El amor a la Patria es un gran principio que nace con toda hombre. (Ros De Olano.)" ),
+                    Paragraph(content = "Con laPatria se está, con razón y sin ella , como se está con el padre y con la madre. (Cánovas.)"),
+                    Paragraph(content = "No se ama a la Patria porque es grande, sino porque es nuestra. (Séneca.)")
+
+                )),
             Subchapter(title = "Deberes del hombre para con la patría", index = 3),
             Subchapter(title = "La bandera", index = 4)
 

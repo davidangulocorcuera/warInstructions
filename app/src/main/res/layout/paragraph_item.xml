@@ -7,10 +7,10 @@
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:text="@string/cebolla"
-              android:paddingStart="@dimen/space_medium"
+             android:layout_marginTop="@dimen/space_medium_small"
+              android:layout_marginBottom="@dimen/space_medium_small"
               android:paddingEnd="@dimen/space_medium"
-              android:paddingTop="@dimen/space_medium"
-
+              android:paddingStart="@dimen/space_medium"
               android:id="@+id/tvContent"
               android:layout_gravity="center"
               android:textSize="@dimen/medium_small_font"
