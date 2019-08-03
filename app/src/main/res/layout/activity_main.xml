@@ -10,6 +10,7 @@
                   android:layout_height="match_parent"
                   android:orientation="vertical"
     >
+
         <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
@@ -28,15 +29,14 @@
                     android:layout_gravity="center"
                     android:id="@+id/toolbarTitle"/>
         </androidx.appcompat.widget.Toolbar>
-
-
         <fragment
                 android:id="@+id/navFragment"
                 android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 app:defaultNavHost="true"
         />
+
     </LinearLayout>
 
     <LinearLayout
