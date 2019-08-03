@@ -54,34 +54,42 @@ object ChaptersManager {
         title = "La Marina"
         , index = 2
         , subchapters = arrayListOf(
-            Subchapter(title = "¿Qué es la Marina?", index = 1,
+            Subchapter(
+                title = "¿Qué es la Marina?", index = 1,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "importancia de la Marina de guerra", index = 2,
+                )
+            ),
+            Subchapter(
+                title = "importancia de la Marina de guerra", index = 2,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Lo que ha hecho la Marina española", index = 3,
+                )
+            ),
+            Subchapter(
+                title = "Lo que ha hecho la Marina española", index = 3,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "La bandera", index = 4,
+                )
+            ),
+            Subchapter(
+                title = "La bandera", index = 4,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                ))
+                )
+            )
 
         )
     )
@@ -90,48 +98,60 @@ object ChaptersManager {
         title = "Las virtudes del marinero"
         , index = 3
         , subchapters = arrayListOf(
-            Subchapter(title = "Disciplina", index = 1,
+            Subchapter(
+                title = "Disciplina", index = 1,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Subordinación", index = 2,
+                )
+            ),
+            Subchapter(
+                title = "Subordinación", index = 2,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Obediencia", index = 3,
+                )
+            ),
+            Subchapter(
+                title = "Obediencia", index = 3,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Valor", index = 4,
+                )
+            ),
+            Subchapter(
+                title = "Valor", index = 4,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Lealtad", index = 5,
+                )
+            ),
+            Subchapter(
+                title = "Lealtad", index = 5,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Honradez", index = 6,
+                )
+            ),
+            Subchapter(
+                title = "Honradez", index = 6,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                ))
+                )
+            )
 
         )
     )
@@ -144,20 +164,29 @@ object ChaptersManager {
                 title = "Posición militar del marinero", index = 1
                 ,
                 content = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+                    Paragraph(content = "Es la posición de 'firmes', que puede ser sin armas o con ellas."),
+                    Paragraph(content = "Condición fundamental de esta posición es la inmovilidad absoluta. Es éste uno de los detalles en donde más se destaca la buena insrucción de una tropa."),
+                    Paragraph(content = "Son vicios frecuentes en una instrucción defectuosa los movimientos intempestivos de los individuos que componen una formación. Rascarse, espantarse las moscas, sujetarse el gorro, sonarse, escupir y toser" +
+                                " son las faltas más comunes, que, como todas las que alteren la quietud y el silencio en una formación, deben evitarse"),
+                    Paragraph(content = "El superior que os mande en ella procurará que la posición de firmes dure lo menos posile, atendiendo a que durante ella os exigirá la innmovilidad y el silencio más absolutos."),
+                    Paragraph(content = "Esta posición se adoptará al dar el superior la voz de 'Firmes'. Se dice también cuadrarse a esta posición, que se expone a continuación:\nLos talones, unidos, o lo más próximos que sea posible," +
+                            " si no lo permite la configuración del individuo. Los pies, con las puntas hacia adelante ,formando ángulo, de manera que queden aproximadamente perpendiulares. Las piernas, extendidas. El peso del cuerpo," +
+                            " soportado por igual por ambas. El pecho saliente, cuidado de no sacar  el vientre. Los hombros, retirados por igual hacia atrás. Los razos, extendidos, sin unir los codos al cuerpo. Las manos, ligeramente extenidas," +
+                            " con las palmas hacia atrás, tocando con los dedos índices las costuras exteriores del pantalón. La cabeza, derecha, erguida, sin sacar la barba. La vista, al frente.")
                 )
             ),
             Subchapter(
                 title = "Descanso en su lugar", index = 2
                 ,
                 content = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+                    Paragraph(content = "De la posición de firmes se pasará a la de descanso cuando se oigan las siguientes voces:\nPrimera. 'En su lugar'.\nSegunda. 'Descanso'."),
+                    Paragraph(content = "A la segunda voz, sin modificar la situación del pie izquierdo, y sin varias la dirección del derecho, se llevará éste atrás y un poco a la derecha, hasta que su talón diste un pie del izquierdo," +
+                            " doblando ligeramente la rodilla izquierda; al mismo tiempo se colocará la mano derecha por delante del cuerpo con la palma vuelta hacia él, y  sobre ella la izquierda en igual dispocición, dejando los brazos naturalmente tendidos."),
+                    Paragraph(content = "En esta posición el marinero podrá moverse con libertad, pero conservando siempre uno de los pies en la línea de formación , de manera que para separar el pie izquierdo habrá de cuadrarse previamente y colocar en ella el derecho."),
+                    Paragraph(content = "Si el descanso ha de ser a discrección, se darán las voces siguientes:\nPrimera. 'A discreción'.\nSegunda. 'Descanso'.\nEl movimiento es como el anterior; pero tendrá el marinero libertad para hablar en voz baja."),
+                    Paragraph(content = "Para pasar de la posición de descanso a la de firmes se darán las voces:\nPrimera. 'Recluta' (o pelotón, o sección, etc.).\nSegunda. 'Firmes'.\nAl oir la primera, el marinero carga el peso del cuerpo sobre el pie que tenga delante," +
+                            " enderezará la pierna correspondiente y, elevando el talón del pie retrasado, esperará hasta oir la segunda voz. Cuando la oiga, llevará el pie retrasado al frente, quedando cuadrado.\nMuchas veces se omite la primera voz" +
+                            " y al oir la de firmes se harán los movimientos anteriores seguidos.")
                 )
             ),
             Subchapter(
@@ -187,133 +216,169 @@ object ChaptersManager {
                     Paragraph(content = "")
                 )
             ),
-            Subchapter(title = "Giros y cambios de dirección", index = 6,
+            Subchapter(
+                title = "Giros y cambios de dirección", index = 6,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Instrucción con armas", index = 7,
+                )
+            ),
+            Subchapter(
+                title = "Instrucción con armas", index = 7,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Posición de firmes", index = 8,
+                )
+            ),
+            Subchapter(
+                title = "Posición de firmes", index = 8,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Descanso en su lugar", index = 9,
+                )
+            ),
+            Subchapter(
+                title = "Descanso en su lugar", index = 9,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Presentar el arma", index = 10,
+                )
+            ),
+            Subchapter(
+                title = "Presentar el arma", index = 10,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Arma sobre el hombro", index = 11,
+                )
+            ),
+            Subchapter(
+                title = "Arma sobre el hombro", index = 11,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Suspender el arma", index = 12,
+                )
+            ),
+            Subchapter(
+                title = "Suspender el arma", index = 12,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Colgar las armas", index = 13,
+                )
+            ),
+            Subchapter(
+                title = "Colgar las armas", index = 13,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Armar y envainar el cuchillo", index = 14,
+                )
+            ),
+            Subchapter(
+                title = "Armar y envainar el cuchillo", index = 14,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Echar a tierra el arma", index = 15,
+                )
+            ),
+            Subchapter(
+                title = "Echar a tierra el arma", index = 15,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Marchar con armas", index = 16,
+                )
+            ),
+            Subchapter(
+                title = "Marchar con armas", index = 16,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
+                )
+            ),
             Subchapter(title = "Marchar con el arma al hombro o suspendida", index = 17),
-            Subchapter(title = "Arma a la funerala", index = 18,
+            Subchapter(
+                title = "Arma a la funerala", index = 18,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Alineaciones", index = 19,
+                )
+            ),
+            Subchapter(
+                title = "Alineaciones", index = 19,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Formación en fila", index = 20,
+                )
+            ),
+            Subchapter(
+                title = "Formación en fila", index = 20,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Formación en comumna", index = 21,
+                )
+            ),
+            Subchapter(
+                title = "Formación en comumna", index = 21,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Deshacer y restablecer la formación", index = 22,
+                )
+            ),
+            Subchapter(
+                title = "Deshacer y restablecer la formación", index = 22,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Revistas y desfiles", index = 23,
+                )
+            ),
+            Subchapter(
+                title = "Revistas y desfiles", index = 23,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Revista de armas", index = 24,
+                )
+            ),
+            Subchapter(
+                title = "Revista de armas", index = 24,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                ))
+                )
+            )
         )
     )
     private val chapterFive: Chapter = Chapter(
@@ -321,90 +386,114 @@ object ChaptersManager {
         title = "Instrucción de campaña"
         , index = 5
         , subchapters = arrayListOf(
-            Subchapter(title = "El tiro de fusil", index = 1,
+            Subchapter(
+                title = "El tiro de fusil", index = 1,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Idea general sobre el fenómeno del tiro", index = 2,
+                )
+            ),
+            Subchapter(
+                title = "Idea general sobre el fenómeno del tiro", index = 2,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Manejo del alza", index = 3,
+                )
+            ),
+            Subchapter(
+                title = "Manejo del alza", index = 3,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Posiciones del tirador", index = 4,
+                )
+            ),
+            Subchapter(
+                title = "Posiciones del tirador", index = 4,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Cargar y montar el arma", index = 5,
+                )
+            ),
+            Subchapter(
+                title = "Cargar y montar el arma", index = 5,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Ponder el seguro", index = 6,
+                )
+            ),
+            Subchapter(
+                title = "Ponder el seguro", index = 6,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Graduar el alza", index = 7,
+                )
+            ),
+            Subchapter(
+                title = "Graduar el alza", index = 7,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Apuntar", index = 8,
+                )
+            ),
+            Subchapter(
+                title = "Apuntar", index = 8,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Retirar las armas estando apuntadas", index = 9,
+                )
+            ),
+            Subchapter(
+                title = "Retirar las armas estando apuntadas", index = 9,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Hacer fuego", index = 10,
+                )
+            ),
+            Subchapter(
+                title = "Hacer fuego", index = 10,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Descargar el fusil o mosquetón", index = 11,
+                )
+            ),
+            Subchapter(
+                title = "Descargar el fusil o mosquetón", index = 11,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Descansar el arma", index = 12,
+                )
+            ),
+            Subchapter(
+                title = "Descansar el arma", index = 12,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                ))
+                )
+            )
         )
     )
     private val chapterSix: Chapter = Chapter(
@@ -412,83 +501,105 @@ object ChaptersManager {
         title = "El tiro con granadas de mano y de fusil"
         , index = 6
         , subchapters = arrayListOf(
-            Subchapter(title = "Características técnicas", index = 1,
+            Subchapter(
+                title = "Características técnicas", index = 1,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Lanzamiento de a granada de mano", index = 2,
+                )
+            ),
+            Subchapter(
+                title = "Lanzamiento de a granada de mano", index = 2,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Posiciones del lanzador", index = 3,
+                )
+            ),
+            Subchapter(
+                title = "Posiciones del lanzador", index = 3,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Preparar la granada", index = 4,
+                )
+            ),
+            Subchapter(
+                title = "Preparar la granada", index = 4,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "El lanzamiento", index = 5,
+                )
+            ),
+            Subchapter(
+                title = "El lanzamiento", index = 5,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "La granada de fusil", index = 6,
+                )
+            ),
+            Subchapter(
+                title = "La granada de fusil", index = 6,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Preparar el arma", index = 7,
+                )
+            ),
+            Subchapter(
+                title = "Preparar el arma", index = 7,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Apuntar el arma", index = 8,
+                )
+            ),
+            Subchapter(
+                title = "Apuntar el arma", index = 8,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Observaciones", index = 9,
+                )
+            ),
+            Subchapter(
+                title = "Observaciones", index = 9,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Utilización del terreno", index = 10,
+                )
+            ),
+            Subchapter(
+                title = "Utilización del terreno", index = 10,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Trincheras", index = 11,
+                )
+            ),
+            Subchapter(
+                title = "Trincheras", index = 11,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                ))
+                )
+            )
         )
     )
     private val chapterSeven: Chapter = Chapter(
@@ -496,41 +607,51 @@ object ChaptersManager {
         title = "Protección contra los gases de combate"
         , index = 7
         , subchapters = arrayListOf(
-            Subchapter(title = "Generalidades", index = 1,
+            Subchapter(
+                title = "Generalidades", index = 1,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Principales gases de combate", index = 2,
+                )
+            ),
+            Subchapter(
+                title = "Principales gases de combate", index = 2,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Métodos de ataque empleados", index = 3,
+                )
+            ),
+            Subchapter(
+                title = "Métodos de ataque empleados", index = 3,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Cómo se efectua la protección contra gases", index = 4,
+                )
+            ),
+            Subchapter(
+                title = "Cómo se efectua la protección contra gases", index = 4,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Auxilio a los accidentados", index = 5,
+                )
+            ),
+            Subchapter(
+                title = "Auxilio a los accidentados", index = 5,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                ))
+                )
+            )
         )
     )
     private val chapterEight: Chapter = Chapter(
@@ -538,27 +659,33 @@ object ChaptersManager {
         title = "Obligaciones generales del centinela"
         , index = 8
         , subchapters = arrayListOf(
-            Subchapter(title = "Importancia de la misión del centinela", index = 1,
+            Subchapter(
+                title = "Importancia de la misión del centinela", index = 1,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Obligaciones del centinela", index = 2,
+                )
+            ),
+            Subchapter(
+                title = "Obligaciones del centinela", index = 2,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Idem del vigilante", index = 3,
+                )
+            ),
+            Subchapter(
+                title = "Idem del vigilante", index = 3,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                ))
+                )
+            )
         )
     )
     private val chapterNine: Chapter = Chapter(
@@ -566,48 +693,60 @@ object ChaptersManager {
         title = "El saludo militar"
         , index = 9
         , subchapters = arrayListOf(
-            Subchapter(title = "Generalidades", index = 1,
+            Subchapter(
+                title = "Generalidades", index = 1,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Cómo se hace el saludo", index = 2,
+                )
+            ),
+            Subchapter(
+                title = "Cómo se hace el saludo", index = 2,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Saludo con armas", index = 3,
+                )
+            ),
+            Subchapter(
+                title = "Saludo con armas", index = 3,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Aclaraciones sobre el saludo", index = 4,
+                )
+            ),
+            Subchapter(
+                title = "Aclaraciones sobre el saludo", index = 4,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Cuándo no se saluda", index = 5,
+                )
+            ),
+            Subchapter(
+                title = "Cuándo no se saluda", index = 5,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Otras muestras de la cortesía militar", index = 6,
+                )
+            ),
+            Subchapter(
+                title = "Otras muestras de la cortesía militar", index = 6,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                ))
+                )
+            )
         )
     )
     private val chapterTen: Chapter = Chapter(
@@ -615,20 +754,24 @@ object ChaptersManager {
         title = "Las jerarquías en la Marina y en el Ejército"
         , index = 10
         , subchapters = arrayListOf(
-            Subchapter(title = "Los que integran la marina", index = 1,
+            Subchapter(
+                title = "Los que integran la marina", index = 1,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                )),
-            Subchapter(title = "Empleos y divisas del Ejército", index = 2,
+                )
+            ),
+            Subchapter(
+                title = "Empleos y divisas del Ejército", index = 2,
                 content = arrayListOf(
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = ""),
                     Paragraph(content = "")
-                ))
+                )
+            )
         )
     )
 
