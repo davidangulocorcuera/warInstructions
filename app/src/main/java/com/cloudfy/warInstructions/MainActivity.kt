@@ -1,19 +1,16 @@
 package com.cloudfy.warInstructions
 
 import android.os.Bundle
-import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import com.cloudfy.warInstructions.base.BaseActivity
 import com.cloudfy.warInstructions.entities.Chapter
-import com.cloudfy.warInstructions.database.ChaptersDatabase
-import com.cloudfy.warInstructions.home.HomeFragmentArgs
-import com.cloudfy.warInstructions.home.HomeFragmentDirections
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class MainActivity : BaseActivity() {
 

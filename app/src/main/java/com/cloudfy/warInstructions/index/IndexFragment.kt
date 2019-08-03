@@ -11,12 +11,18 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.entities.Chapter
+import com.google.android.gms.ads.AdListener
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.InterstitialAd
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.fragment_index.*
+import org.jetbrains.anko.support.v4.act
 
 
 class IndexFragment : BaseFragment() {
     private lateinit var indexAdapter: IndexAdapter
     private var chapters: ArrayList<Chapter> = ArrayList()
+    private lateinit var mInterstitialAd: InterstitialAd
 
 
 
@@ -34,11 +40,24 @@ class IndexFragment : BaseFragment() {
             chapters = ArrayList(args.chapters.toList())
             indexAdapter.addAll(chapters)
         }
-    }
 
+
+
+    }
     override fun onDestroy() {
         super.onDestroy()
         showToolbar(false)
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        MobileAds.initialize(act,
+            "ca-app-pub-1767954011690390~3917587805")
+
+        mInterstitialAd = InterstitialAd(act)
+        mInterstitialAd.adUnitId = "ca-app-pub-3940256099942544/6300978111"
+        mInterstitialAd.loadAd(AdRequest.Builder().build())
 
     }
     private fun initList() {
@@ -54,10 +73,18 @@ class IndexFragment : BaseFragment() {
                 val bundle = Bundle()
                 bundle.putParcelableArray("subChapters",it.subchapters.toTypedArray())
                 bundle.putString("title",it.title)
+                if (mInterstitialAd.isLoaded) {
+                    mInterstitialAd.show()
+                } else {
+                    Log.d("TAG", "The interstitial wasn't loaded yet.")
+                }
                 this.findNavController().navigate(R.id.goToSubIndex, bundle)
             }
-    }
 
+//
+
+
+    }
 
 
 
