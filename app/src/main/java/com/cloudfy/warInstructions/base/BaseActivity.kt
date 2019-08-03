@@ -6,6 +6,7 @@ import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.utils.setVisible
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 abstract class BaseActivity : AppCompatActivity() {
@@ -21,7 +22,6 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         LOG_TAG = getTag()
-
         val layoutId = onCreateViewId()
         if (layoutId != 0) {
             setContentView(layoutId)
@@ -41,6 +41,22 @@ abstract class BaseActivity : AppCompatActivity() {
         else {
             this.supportActionBar?.hide()
         }
+    }
+
+    fun setToolbarTitle(title: String) {
+        this.supportActionBar?.title = ""
+        this.toolbarTitle.text = title
+    }
+
+    fun setToolbarBackButton(show: Boolean){
+        this.supportActionBar?.setDisplayHomeAsUpEnabled(show)
+        this.supportActionBar?.setDisplayShowHomeEnabled(show)
+
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
 

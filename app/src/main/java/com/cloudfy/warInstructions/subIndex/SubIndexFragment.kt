@@ -15,10 +15,13 @@ import kotlinx.android.synthetic.main.fragment_sub_index.*
 class SubIndexFragment : BaseFragment() {
     private lateinit var subIndexAdapter: SubIndexAdapter
     private  var subChapters: ArrayList<Subchapter> = ArrayList()
+    private val args: SubIndexFragmentArgs by navArgs()
+
     override fun viewCreated(view: View?) {
+        setToolbarTitle(args.title)
+        showToolbar(true)
         initList()
         if(subChapters.isEmpty()){
-            val args: SubIndexFragmentArgs by navArgs()
             subChapters = ArrayList(args.subChapters.toList())
             subIndexAdapter.addAll(subChapters)
         }
@@ -27,6 +30,7 @@ class SubIndexFragment : BaseFragment() {
     override fun onCreateViewId(): Int {
         return R.layout.fragment_sub_index
     }
+
     private fun initList() {
         val layoutManager = GridLayoutManager(activity, 1)
         rvSubIndex.layoutManager = layoutManager

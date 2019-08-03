@@ -1,7 +1,6 @@
 package com.cloudfy.warInstructions.subIndex
 
 import android.app.Activity
-import android.net.wifi.aware.SubscribeConfig
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,6 +30,10 @@ class SubIndexAdapter(val items: ArrayList<Subchapter>, val activity: Activity, 
         override fun bind(position: Int) {
             current = getItem(position)
             setValues()
+            view.setOnClickListener {
+                onClick(current)
+            }
+
 
         }
 

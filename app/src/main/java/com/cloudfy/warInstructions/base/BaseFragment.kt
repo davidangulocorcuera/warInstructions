@@ -29,6 +29,12 @@ abstract class BaseFragment : Fragment() {
     fun showToolbar(show: Boolean) {
         baseActivity?.showToolbar(show)
     }
+    fun setToolbarTitle(title: String){
+        baseActivity?.setToolbarTitle(title)
+    }
+    fun setToolbarBackButton(show: Boolean){
+        baseActivity?.setToolbarBackButton(show)
+    }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

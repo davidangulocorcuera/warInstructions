@@ -25,6 +25,9 @@ class IndexFragment : BaseFragment() {
     }
 
     override fun viewCreated(view: View?) {
+        setToolbarTitle("Índice")
+        setToolbarBackButton(true)
+        showToolbar(true)
         initList()
         if(chapters.isEmpty()){
             val args: IndexFragmentArgs by navArgs()
@@ -33,6 +36,11 @@ class IndexFragment : BaseFragment() {
         }
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        showToolbar(false)
+
+    }
     private fun initList() {
         val layoutManager = GridLayoutManager(activity, 1)
         rvIndex.layoutManager = layoutManager
@@ -45,9 +53,11 @@ class IndexFragment : BaseFragment() {
             IndexAdapter(activity = activity!! , items = chapters) {
                 val bundle = Bundle()
                 bundle.putParcelableArray("subChapters",it.subchapters.toTypedArray())
+                bundle.putString("title",it.title)
                 this.findNavController().navigate(R.id.goToSubIndex, bundle)
             }
     }
+
 
 
 

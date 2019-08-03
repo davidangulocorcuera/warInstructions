@@ -28,6 +28,8 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setSupportActionBar(toolbar)
+        showToolbar(false)
         mainViewModel.chaptersResponse.observe(this, Observer { chapters ->
             chapters?.let {
                 loadNavigationGraph(it)
