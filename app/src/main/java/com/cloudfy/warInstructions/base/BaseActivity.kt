@@ -35,5 +35,13 @@ abstract class BaseActivity : AppCompatActivity() {
         progress?.setVisible(show)
     }
 
+    fun showToolbar(show: Boolean) {
+        if (show)
+            this.supportActionBar?.show()
+        else {
+            this.supportActionBar?.hide()
+        }
+    }
+
 
 }

@@ -11,10 +11,10 @@ object ChaptersManager {
         title = "La patría y la bandera"
         , index = 1
         , subchapters = arrayListOf(
-            Subchapter(title = "La patría y la bandera", content = ""),
-            Subchapter(title = "El amor a la patría"),
-            Subchapter(title = "Deberes del hombre para con la patría"),
-            Subchapter(title = "La bandera")
+            Subchapter(title = "La patría y la bandera", content = "", index = 1),
+            Subchapter(title = "El amor a la patría", index = 2),
+            Subchapter(title = "Deberes del hombre para con la patría", index = 3),
+            Subchapter(title = "La bandera", index = 4)
 
         )
     )
@@ -24,15 +24,151 @@ object ChaptersManager {
         title = "La Marina"
         , index = 2
         , subchapters = arrayListOf(
-            Subchapter(title = "¿Qué es la Marina?", content = ""),
-            Subchapter(title = "importancia de la Marina de guerra"),
-            Subchapter(title = "Lo que ha hecho la Marina española"),
-            Subchapter(title = "La bandera")
+            Subchapter(title = "¿Qué es la Marina?", content = "", index = 1),
+            Subchapter(title = "importancia de la Marina de guerra", index = 2),
+            Subchapter(title = "Lo que ha hecho la Marina española", index = 3),
+            Subchapter(title = "La bandera", index = 4)
 
         )
     )
-    fun addChapters(){
+    private val chapterThree: Chapter = Chapter(
+        3,
+        title = "Las virtudes del marinero"
+        , index = 3
+        , subchapters = arrayListOf(
+            Subchapter(title = "Disciplina", content = "", index = 1),
+            Subchapter(title = "Subordinación", index = 2),
+            Subchapter(title = "Obediencia", index = 3),
+            Subchapter(title = "Valor", index = 4),
+            Subchapter(title = "Lealtad", index = 5),
+            Subchapter(title = "Honradez", index = 6)
+
+        )
+    )
+    private val chapterFour: Chapter = Chapter(
+        4,
+        title = "La instrucción militar"
+        , index = 4
+        , subchapters = arrayListOf(
+            Subchapter(title = "Posición militar del marinero", content = "", index = 1),
+            Subchapter(title = "Descanso en su lugar", index = 2),
+            Subchapter(title = "Movimientos de cabeza", index = 3),
+            Subchapter(title = "Giros a pie firme", index = 4),
+            Subchapter(title = "Marchar: distintos pasos", index = 5),
+            Subchapter(title = "Giros y cambios de dirección", index = 6),
+            Subchapter(title = "Instrucción con armas", content = "", index = 7),
+            Subchapter(title = "Posición de firmes", index = 8),
+            Subchapter(title = "Descanso en su lugar", index = 9),
+            Subchapter(title = "Presentar el arma", index = 10),
+            Subchapter(title = "Arma sobre el hombro", index = 11),
+            Subchapter(title = "Suspender el arma", index = 12),
+            Subchapter(title = "Colgar las armas", content = "", index = 13),
+            Subchapter(title = "Armar y envainar el cuchillo", index = 14),
+            Subchapter(title = "Echar a tierra el arma", index = 15),
+            Subchapter(title = "Marchar con armas", index = 16),
+            Subchapter(title = "Marchar con el arma al hombro o suspendida", index = 17),
+            Subchapter(title = "Arma a la funerala", index = 18),
+            Subchapter(title = "Alineaciones", content = "", index = 19),
+            Subchapter(title = "Formación en fila", index = 20),
+            Subchapter(title = "Formación en comumna", index = 21),
+            Subchapter(title = "Deshacer y restablecer la formación", index = 22),
+            Subchapter(title = "Revistas y desfiles", index = 23),
+            Subchapter(title = "Revista de armas", index = 24)
+        )
+    )
+    private val chapterFive: Chapter = Chapter(
+        5,
+        title = "Instrucción de campaña"
+        , index = 5
+        , subchapters = arrayListOf(
+            Subchapter(title = "El tiro de fusil", content = "", index = 1),
+            Subchapter(title = "Idea general sobre el fenómeno del tiro", index = 2),
+            Subchapter(title = "Manejo del alza", index = 3),
+            Subchapter(title = "Posiciones del tirador", index = 4),
+            Subchapter(title = "Cargar y montar el arma", index = 5),
+            Subchapter(title = "Ponder el seguro", index = 6),
+            Subchapter(title = "Graduar el alza", content = "", index = 7),
+            Subchapter(title = "Apuntar", index = 8),
+            Subchapter(title = "Retirar las armas estando apuntadas", index = 9),
+            Subchapter(title = "Hacer fuego", index = 10),
+            Subchapter(title = "Descargar el fusil o mosquetón", index = 11),
+            Subchapter(title = "Descansar el arma", index = 12)
+        )
+    )
+    private val chapterSix: Chapter = Chapter(
+        6,
+        title = "El tiro con granadas de mano y de fusil"
+        , index = 6
+        , subchapters = arrayListOf(
+            Subchapter(title = "Características técnicas", content = "", index = 1),
+            Subchapter(title = "Lanzamiento de a granada de mano", index = 2),
+            Subchapter(title = "Posiciones del lanzador", index = 3),
+            Subchapter(title = "Preparar la granada", index = 4),
+            Subchapter(title = "El lanzamiento", index = 5),
+            Subchapter(title = "La granada de fusil", index = 6),
+            Subchapter(title = "Preparar el arma", content = "", index = 7),
+            Subchapter(title = "Apuntar el arma", index = 8),
+            Subchapter(title = "Observaciones", index = 9),
+            Subchapter(title = "Utilización del terreno", index = 10),
+            Subchapter(title = "Trincheras", index = 11)
+        )
+    )
+    private val chapterSeven: Chapter = Chapter(
+        7,
+        title = "Protección contra los gases de combate"
+        , index = 7
+        , subchapters = arrayListOf(
+            Subchapter(title = "Generalidades", content = "", index = 1),
+            Subchapter(title = "Principales gases de combate", index = 2),
+            Subchapter(title = "Métodos de ataque empleados", index = 3),
+            Subchapter(title = "Cómo se efectua la protección contra gases", index = 4),
+            Subchapter(title = "Auxilio a los accidentados", index = 5)
+        )
+    )
+    private val chapterEight: Chapter = Chapter(
+        8,
+        title = "Obligaciones generales del centinela"
+        , index = 8
+        , subchapters = arrayListOf(
+            Subchapter(title = "Importancia de la misión del centinela", content = "", index = 1),
+            Subchapter(title = "Obligaciones del centinela", index = 2),
+            Subchapter(title = "Idem del vigilante", index = 3)
+        )
+    )
+    private val chapterNine: Chapter = Chapter(
+        9,
+        title = "El saludo militar"
+        , index = 9
+        , subchapters = arrayListOf(
+            Subchapter(title = "Generalidades", content = "", index = 1),
+            Subchapter(title = "Cómo se hace el saludo", index = 2),
+            Subchapter(title = "Saludo con armas", index = 3),
+            Subchapter(title = "Aclaraciones sobre el saludo", content = "", index = 4),
+            Subchapter(title = "Cuándo no se saluda", index = 5),
+            Subchapter(title = "Otras muestras de la cortesía militar", index = 6)
+        )
+    )
+    private val chapterTen: Chapter = Chapter(
+        10,
+        title = "Las jerarquías en la Marina y en el Ejército"
+        , index = 10
+        , subchapters = arrayListOf(
+            Subchapter(title = "Los que integran la marina", content = "", index = 1),
+            Subchapter(title = "Empleos y divisas del Ejército", index = 2)
+        )
+    )
+    fun addChapters() {
         chapters.add(chapterOne)
         chapters.add(chapterTwo)
+        chapters.add(chapterThree)
+        chapters.add(chapterFour)
+        chapters.add(chapterFive)
+        chapters.add(chapterSix)
+        chapters.add(chapterSeven)
+        chapters.add(chapterEight)
+        chapters.add(chapterNine)
+        chapters.add(chapterTen)
+
+
     }
 }

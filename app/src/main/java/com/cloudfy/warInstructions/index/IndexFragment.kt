@@ -1,16 +1,16 @@
 package com.cloudfy.warInstructions.index
 
 
+import android.os.Bundle
 import android.util.Log
 import android.view.View
-import androidx.lifecycle.Observer
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
-import com.cloudfy.warInstructions.database.ChaptersDatabase
 import com.cloudfy.warInstructions.entities.Chapter
-import com.cloudfy.warInstructions.home.HomeFragmentArgs
 import kotlinx.android.synthetic.main.fragment_index.*
 
 
@@ -26,13 +26,13 @@ class IndexFragment : BaseFragment() {
 
     override fun viewCreated(view: View?) {
         initList()
-        val args: IndexFragmentArgs by navArgs()
-        chapters = ArrayList(args.chapters.toList())
-        chapters.forEach {chapter ->
-            Log.v("taag", chapter.title)
+        if(chapters.isEmpty()){
+            val args: IndexFragmentArgs by navArgs()
+            chapters = ArrayList(args.chapters.toList())
+            indexAdapter.addAll(chapters)
         }
-        indexAdapter.addAll(chapters)
-        }
+    }
+
     private fun initList() {
         val layoutManager = GridLayoutManager(activity, 1)
         rvIndex.layoutManager = layoutManager
@@ -43,7 +43,9 @@ class IndexFragment : BaseFragment() {
     private fun setListListener() {
         indexAdapter =
             IndexAdapter(activity = activity!! , items = chapters) {
-                // onClick event
+                val bundle = Bundle()
+                bundle.putParcelableArray("subChapters",it.subchapters.toTypedArray())
+                this.findNavController().navigate(R.id.goToSubIndex, bundle)
             }
     }
 

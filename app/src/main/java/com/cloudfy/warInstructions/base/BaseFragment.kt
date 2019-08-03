@@ -26,7 +26,9 @@ abstract class BaseFragment : Fragment() {
     fun showProgress(show: Boolean, hasShade: Boolean) {
         baseActivity?.showProgress(show, hasShade)
     }
-
+    fun showToolbar(show: Boolean) {
+        baseActivity?.showToolbar(show)
+    }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

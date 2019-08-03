@@ -3,11 +3,11 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".index.IndexFragment">
+             tools:context=".subIndex.SubIndexFragment">
 
     <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:id="@+id/rvIndex"
+            android:id="@+id/rvSubIndex"
             android:layout_height="match_parent">
 
     </androidx.recyclerview.widget.RecyclerView>

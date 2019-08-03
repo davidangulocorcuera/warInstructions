@@ -1,6 +1,7 @@
 package com.cloudfy.warInstructions.home
 
 
+import android.app.ActionBar
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -10,6 +11,9 @@ import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.entities.Chapter
 import kotlinx.android.synthetic.main.fragment_home.*
+import androidx.appcompat.app.AppCompatActivity
+
+
 
 
 class HomeFragment : BaseFragment() {

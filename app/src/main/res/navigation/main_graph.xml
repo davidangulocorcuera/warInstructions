@@ -13,7 +13,12 @@
     <fragment android:id="@+id/indexFragment" android:name="com.cloudfy.warInstructions.index.IndexFragment"
               android:label="fragment_index" tools:layout="@layout/fragment_index">
         <argument android:name="chapters" app:argType="com.cloudfy.warInstructions.entities.Chapter[]"/>
+        <action android:id="@+id/goToSubIndex" app:destination="@id/subIndexFragment"/>
     </fragment>
     <action android:id="@+id/goToHomeFragment" app:destination="@id/homeFragment"/>
+    <fragment android:id="@+id/subIndexFragment" android:name="com.cloudfy.warInstructions.subIndex.SubIndexFragment"
+              android:label="fragment_sub_index" tools:layout="@layout/fragment_sub_index">
+        <argument android:name="subChapters" app:argType="com.cloudfy.warInstructions.entities.Subchapter[]"/>
+    </fragment>
 
 </navigation>
