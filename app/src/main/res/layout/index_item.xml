@@ -24,8 +24,7 @@
                       android:id="@+id/tvNumberIndex"
                       android:fontFamily="@font/crimson_text_bold"
                       android:layout_marginStart="@dimen/space_medium"
-
-                      android:textSize="@dimen/medium_big_font"
+                      android:textSize="@dimen/medium_font"
             />
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
@@ -34,7 +33,7 @@
                       android:layout_marginStart="@dimen/space_small"
                       android:layout_marginEnd="@dimen/space_medium"
                       android:fontFamily="@font/crimson_text_bold"
-                      android:textSize="@dimen/big_font"
+                      android:textSize="@dimen/medium_font"
             />
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
@@ -42,7 +41,7 @@
                       android:textColor="@color/black"
                       android:id="@+id/tvTitle"
                       android:fontFamily="@font/crimson_text_bold"
-                      android:textSize="@dimen/medium_big_font"
+                      android:textSize="@dimen/medium_font"
                       android:layout_gravity="center"/>
         </LinearLayout>
         <View android:layout_width="match_parent"

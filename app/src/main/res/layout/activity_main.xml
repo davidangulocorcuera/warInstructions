@@ -22,9 +22,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:padding="@dimen/space_medium"
+                    android:padding="@dimen/space_small"
                     android:fontFamily="@font/crimson_text_bold"
-                    android:textSize="@dimen/medium_big_font"
+                    android:textSize="@dimen/medium_font"
                     android:textColor="@color/white"
                     android:layout_gravity="center"
                     android:id="@+id/toolbarTitle"/>

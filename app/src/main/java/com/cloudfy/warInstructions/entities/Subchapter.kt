@@ -2,20 +2,24 @@ package com.cloudfy.warInstructions.entities
 
 import android.os.Parcel
 import android.os.Parcelable
+import androidx.room.TypeConverters
+import com.cloudfy.warInstructions.model.Converters
 
 
-class Subchapter ( var title: String = "", var index: Int = 0, var content: String = ""): Parcelable {
+class Subchapter(
+    var title: String = "", var index: Int = 0,
+    @TypeConverters(Converters::class)
+    var content: ArrayList<Paragraph> = ArrayList()
+) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
-        parcel.readInt(),
-        parcel.readString()
+        parcel.readInt()
     ) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(title)
         parcel.writeInt(index)
-        parcel.writeString(content)
     }
 
     override fun describeContents(): Int {
@@ -31,5 +35,6 @@ class Subchapter ( var title: String = "", var index: Int = 0, var content: Stri
             return arrayOfNulls(size)
         }
     }
+
 }
 
