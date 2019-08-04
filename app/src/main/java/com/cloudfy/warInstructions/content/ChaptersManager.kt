@@ -192,27 +192,33 @@ object ChaptersManager {
             Subchapter(
                 title = "Movimientos de cabeza", index = 3,
                 content = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+                    Paragraph(content = "Voces:\nPrimera. Vista a la derecha (o a la izquierda).\nSegunda. Mar."),
+                    Paragraph(content = "A la segunda, el marinero volverá la cabeza hacia el costado que en la voz se indique, cuidando de no mover el cuerpo ni echar hacia adelante la cabeza. Así permanecrá hasta que se mande 'firmes' o 'vista al frente'.")
                 )
             ),
             Subchapter(
                 title = "Giros a pie firme", index = 4,
                 content = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                    Paragraph(content = "Hacer frente a uno de los costados. Voces:\nPrimera. Derecha (o izquierda).\nSegunda. Mar."),
+                    Paragraph(content = "Para hacer derecha, a la primera voz o voz preventiva se cargará el peso del cuerpo simultáneamente sobre el talón del pie derecho y la punta del izquierdo. A la segunda voz o voz ejecutiva, apoyándose sobre la punta" +
+                            " del pie izquierdo , y girando sobre él y el talón del derecho, volverá el cuerpo hacie el costado indicado, hasta dejar el pie derecho en la dirección que tendrá en el nuevo frente, y en ese momento llevará el pie izquierdo junto" +
+                            " al derecho, quedando cuadredo al nuevo frente.\nEl movimiento hacia el costado izquierdo se ejecutará de modo análogo, utilizando como ejes de giro el talón del pie izquierdo y la punta del derecho," +
+                            " sobre la que se apoyará para hacer el movimiento."),
+                    Paragraph(content = "Girar a frente oblicuo. Voces:\nPrimera. Media vuelta.\nSegunda. Mar."),
+                    Paragraph(content = "El movimiento se hará como se indica en el caso anterior, sin hacer mas que medio giro al costado que se mande."),
+                    Paragraph(content = "Hacer frente a donde se tenía la espalda. Voces:\nPrimera. Media vuelta.\nSegunda Mar."),
+                    Paragraph(content = "A la segunda se harán sin precipitación dos giros seguidos a la derecha en la forma dicha, quedando el pecho donde se tenía la espalda. Al girar no se separarán los brazos del cuerpo.")
+                    )
             ),
             Subchapter(
                 title = "Marchar: distintos pasos", index = 5,
                 content = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
+                    Paragraph(content = "Paso Ordinario. Voces:\nPrimera. De frente.\nSegunda. Mar."),
+                    Paragraph(content = "Al oir la voz preventiva se cargará el peso del cuerpo sobre la pierna derecha, preparándose para empezar a andar con el pie izuierdo cuando se oiga la voz ejecuritva. Al marchar se llevará el cuerpo derecho," +
+                            " la cabeza levantada, el pecho fuera, los hombros retirados y la vista al frente. Se llevará el compás del paso con el ruido de la pisada, teniendo en cuenta que la velocidad  es de 130 pasos por minuto, y la longitud" +
+                            " de éstos, de 65 centímetros de talón a talón. Los brazos se moverán con soltura y acompasadamente con el paso, sin incurrir en exageraciones. Al llevarlos hacia adelante, las manos deben llegar a la altura de la cntura, sin pasar de ahí," +
+                            " y al llevarlos hacia atrás, las manos rebasarán ligeramente los muslos."),
+                    Paragraph(content = "Paso de maniobra. Voces:\nPrimera. Paso de maniobra.\nSegunda. Mar."),
                     Paragraph(content = "")
                 )
             ),
