@@ -5,6 +5,7 @@ import android.app.ActionBar
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.core.app.ActivityCompat.finishAffinity
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.cloudfy.warInstructions.R
@@ -40,6 +41,9 @@ class HomeFragment : BaseFragment() {
 
         btnIndex.setOnClickListener {
             this.findNavController().navigate(R.id.goToIndex, bundle)
+        }
+        btnExit.setOnClickListener {
+            finishAffinity(activity!!)
         }
     }
 
