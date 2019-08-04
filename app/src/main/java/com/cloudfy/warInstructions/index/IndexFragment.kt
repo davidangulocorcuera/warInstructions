@@ -56,7 +56,7 @@ class IndexFragment : BaseFragment() {
             "ca-app-pub-1767954011690390~3917587805")
 
         mInterstitialAd = InterstitialAd(act)
-        mInterstitialAd.adUnitId = "ca-app-pub-3940256099942544/6300978111"
+        mInterstitialAd.adUnitId = "ca-app-pub-1767954011690390/6028799726"
         mInterstitialAd.loadAd(AdRequest.Builder().build())
 
     }

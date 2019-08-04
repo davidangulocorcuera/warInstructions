@@ -13,7 +13,8 @@
         <ImageView android:layout_width="@dimen/big_space"
                    android:layout_height="@dimen/biggest_space"
                    android:layout_gravity="center"
-                   android:src="@drawable/army_logo"
+                   android:src="@drawable/anchor"
+                   android:tint="@color/green"
                    android:layout_margin="@dimen/space_medium"
         />
 
@@ -52,7 +53,6 @@
                     android:focusable="true"/>
 
 
-
         </LinearLayout>
 
         <com.google.android.gms.ads.AdView
@@ -63,7 +63,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"
                 ads:adSize="SMART_BANNER"
-                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+                ads:adUnitId="ca-app-pub-1767954011690390/5602204566">
         </com.google.android.gms.ads.AdView>
     </LinearLayout>
 
