@@ -1,10 +1,8 @@
 package com.cloudfy.warInstructions.subIndex
 
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.View
-import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
@@ -12,7 +10,6 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.entities.Subchapter
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_sub_index.*
 
 class SubIndexFragment : BaseFragment() {
@@ -45,7 +42,7 @@ class SubIndexFragment : BaseFragment() {
         subIndexAdapter =
             SubIndexAdapter(activity = activity!! , items = subChapters) {
                 val bundle = Bundle()
-                bundle.putParcelableArray("paragraphs",it.content.toTypedArray())
+                bundle.putParcelableArray("paragraphs",it.paragrahps.toTypedArray())
                 bundle.putString("title",it.title)
                 this.findNavController().navigate(R.id.goToContentFragment,bundle)
             }

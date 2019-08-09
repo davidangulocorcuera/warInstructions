@@ -7,10 +7,9 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import com.cloudfy.warInstructions.base.BaseActivity
 import com.cloudfy.warInstructions.entities.Chapter
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home.*
+import java.io.IOException
+import java.nio.charset.Charset
 
 class MainActivity : BaseActivity() {
 
@@ -33,16 +32,33 @@ class MainActivity : BaseActivity() {
             }
         })
         mainViewModel.getAllChapters(application, this)
+        readJson("data/war_book.json")
     }
 
-    private fun loadNavigationGraph(chapters: ArrayList<Chapter>){
+    private fun loadNavigationGraph(chapters: ArrayList<Chapter>) {
         val navHostFragment = navFragment as NavHostFragment
         val inflater = navHostFragment.navController.navInflater
         val graph = inflater.inflate(R.navigation.main_graph)
         val bundle = Bundle()
-        bundle.putParcelableArray("chapters" ,chapters.toTypedArray())
-        findNavController(R.id.navFragment).setGraph(graph,bundle)
+        bundle.putParcelableArray("chapters", chapters.toTypedArray())
+        findNavController(R.id.navFragment).setGraph(graph, bundle)
 
+    }
+
+    private fun readJson(path: String): String {
+        var json: String? = null
+        try {
+            val `is` = this.assets.open(path)
+            val size = `is`.available()
+            val buffer = ByteArray(size)
+            `is`.read(buffer)
+            `is`.close()
+            json = String(buffer, Charset.forName("UTF-8"))
+        } catch (e: IOException) {
+            e.printStackTrace()
+            return e.message!!
+        }
+        return json
     }
 
 

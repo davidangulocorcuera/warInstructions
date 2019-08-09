@@ -9,7 +9,7 @@ import com.cloudfy.warInstructions.model.Converters
 class Subchapter(
     var title: String = "", var index: Int = 0,
     @TypeConverters(Converters::class)
-    var content: ArrayList<Paragraph> = ArrayList()
+    var paragrahps: ArrayList<Paragraph> = ArrayList()
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),

@@ -1,9 +1,7 @@
 package com.cloudfy.warInstructions.home
 
 
-import android.app.ActionBar
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.core.app.ActivityCompat.finishAffinity
 import androidx.navigation.fragment.findNavController
