@@ -15,6 +15,6 @@
               android:layout_gravity="center"
               android:textSize="@dimen/medium_small_font"
               android:textColor="@color/black"
-              android:fontFamily="@font/crimson_text_regular"
+              android:fontFamily="@font/roboto_regular"
     />
 </LinearLayout>

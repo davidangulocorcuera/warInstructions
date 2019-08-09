@@ -23,7 +23,7 @@
                       android:textColor="@color/green"
                       android:id="@+id/tvNumberIndex"
                       android:layout_marginStart="@dimen/space_medium"
-                      android:fontFamily="@font/crimson_text_regular"
+                      android:fontFamily="@font/roboto_regularitalic"
                       android:textSize="@dimen/medium_font"
                       android:layout_gravity="center_vertical"
             />
@@ -34,7 +34,7 @@
                       android:layout_marginStart="@dimen/space_small"
                       android:layout_marginEnd="@dimen/space_medium"
                       android:layout_gravity="center_vertical"
-                      android:fontFamily="@font/crimson_text_regular"
+                      android:fontFamily="@font/roboto_regularitalic"
                       android:textSize="@dimen/medium_font"
             />
             <TextView android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
                       android:text="La patria y la bandera."
                       android:textColor="@color/black"
                       android:id="@+id/tvTitle"
-                      android:fontFamily="@font/crimson_text_regular"
+                      android:fontFamily="@font/roboto_regular"
                       android:textSize="@dimen/medium_font"
                       android:layout_gravity="center_vertical"/>
         </LinearLayout>

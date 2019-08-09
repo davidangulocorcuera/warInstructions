@@ -2,7 +2,6 @@ package com.cloudfy.warInstructions.content
 
 import android.util.Log
 import com.cloudfy.warInstructions.entities.Chapter
-import com.cloudfy.warInstructions.entities.Subchapter
 import com.google.gson.Gson
 
 object Mapper {
