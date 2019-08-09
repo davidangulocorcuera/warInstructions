@@ -59,7 +59,7 @@ class MainActivity : BaseActivity() {
             e.printStackTrace()
             return e.message!!
         }
-        Mapper.streamingArray(json)
+        Mapper.jsonToChapters(json)
         return json
     }
 

@@ -4,11 +4,14 @@ import android.os.Parcel
 import android.os.Parcelable
 import androidx.room.TypeConverters
 import com.cloudfy.warInstructions.model.Converters
+import com.google.gson.annotations.SerializedName
 
 
 class Subchapter(
+    @SerializedName("title")
     var title: String = "", var index: Int = 0,
     @TypeConverters(Converters::class)
+    @SerializedName("paragraphs")
     var paragrahps: ArrayList<Paragraph> = ArrayList()
 ) : Parcelable {
     constructor(parcel: Parcel) : this(

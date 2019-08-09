@@ -69,8 +69,6 @@ dependencies {
     // Google ads
     implementation 'com.google.android.gms:play-services-ads:18.1.1'
 
-    // JsonManager
-    implementation 'com.beust:klaxon:5.0.1'
 
 
 }

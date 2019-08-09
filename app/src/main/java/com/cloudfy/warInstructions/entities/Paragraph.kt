@@ -2,8 +2,12 @@ package com.cloudfy.warInstructions.entities
 
 import android.os.Parcel
 import android.os.Parcelable
+import com.google.gson.annotations.SerializedName
 
-class Paragraph (var content: String = ""): Parcelable {
+class Paragraph(
+    @SerializedName("content")
+    var content: String = ""
+) : Parcelable {
     constructor(parcel: Parcel) : this(parcel.readString()) {
     }
 
