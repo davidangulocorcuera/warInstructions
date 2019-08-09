@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import com.cloudfy.warInstructions.base.BaseActivity
+import com.cloudfy.warInstructions.content.Mapper
 import com.cloudfy.warInstructions.entities.Chapter
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.IOException
@@ -58,6 +59,7 @@ class MainActivity : BaseActivity() {
             e.printStackTrace()
             return e.message!!
         }
+        Mapper.streamingArray(json)
         return json
     }
 
