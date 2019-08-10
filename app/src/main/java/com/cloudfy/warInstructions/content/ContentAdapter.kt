@@ -6,13 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseRecyclerAdapter
-import com.cloudfy.warInstructions.entities.Paragraph
-import com.cloudfy.warInstructions.entities.Subchapter
-import kotlinx.android.synthetic.main.index_item.view.*
 import kotlinx.android.synthetic.main.paragraph_item.view.*
 
 
-class ContentAdapter(val items: ArrayList<Paragraph>, val activity: Activity) : BaseRecyclerAdapter<Paragraph, ContentAdapter.ViewHolder>() {
+class ContentAdapter(val items: ArrayList<String>, val activity: Activity) : BaseRecyclerAdapter<String, ContentAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context)
             .inflate(R.layout.paragraph_item, parent, false)
@@ -26,7 +23,7 @@ class ContentAdapter(val items: ArrayList<Paragraph>, val activity: Activity) : 
 
 
     inner class ViewHolder(var view: View) : BaseRecyclerAdapter.ViewHolder(view) {
-        private lateinit var current: Paragraph
+        private lateinit var current: String
 
 
         override fun bind(position: Int) {
@@ -35,7 +32,7 @@ class ContentAdapter(val items: ArrayList<Paragraph>, val activity: Activity) : 
         }
 
         private fun setValues() {
-            view.tvContent.text = current.content
+            view.tvContent.text = current
 
         }
 

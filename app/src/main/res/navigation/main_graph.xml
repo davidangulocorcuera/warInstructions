@@ -24,7 +24,7 @@
     </fragment>
     <fragment android:id="@+id/contentFragment" android:name="com.cloudfy.warInstructions.content.ContentFragment"
               android:label="fragment_content" tools:layout="@layout/fragment_content">
-        <argument android:name="paragraphs" app:argType="com.cloudfy.warInstructions.entities.Paragraph[]"/>
+        <argument android:name="paragraphs" app:argType="string[]"/>
         <argument android:name="title" app:argType="string"/>
     </fragment>
 

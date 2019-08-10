@@ -1,16 +1,15 @@
 package com.cloudfy.warInstructions
 
-import android.app.Application
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import com.cloudfy.warInstructions.base.BaseActivity
 import com.cloudfy.warInstructions.content.Mapper
-import com.cloudfy.warInstructions.database.ChaptersDatabase
 import com.cloudfy.warInstructions.entities.Chapter
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import java.nio.charset.Charset
 
-class MainViewModel(var activity: BaseActivity? = null) : ViewModel() {
+class MainViewModel() : ViewModel() {
 
     val chapters = MutableLiveData<ArrayList<Chapter>>()
 
@@ -20,33 +19,28 @@ class MainViewModel(var activity: BaseActivity? = null) : ViewModel() {
         }
     }
 
-
-    fun getAllChapters(application: Application, activity: BaseActivity) {
-            ChaptersDatabase.getDatabase(application).chapterDao().getAllChapters()
-                .observe(
-                    activity,
-                    Observer<List<Chapter>> {
-                        it?.let { chapters ->
-                            this.chaptersResponse.postValue(ArrayList(chapters))
-                        }
-                    })
-
-
+    fun getAllChapters(activity: BaseActivity) {
+        this.chaptersResponse.postValue(
+            mapJson(
+                readJson("data/war_book.json",activity)
+            )
+        )
     }
 
-    fun readJson(path: String, activity: BaseActivity): String {
-        var json = ""
+    private fun readJson(path: String, activity: BaseActivity): String{
+        val inputStream = activity.assets.open(path)
+        val size = inputStream.available()
+        val buffer = ByteArray(size)
+        inputStream.read(buffer)
+        inputStream.close()
+        return String(buffer, Charset.forName("UTF-8"))
+    }
 
-            val inputStream = activity.assets.open(path)
-            val size = inputStream.available()
-            val buffer = ByteArray(size)
-            inputStream.read(buffer)
-            inputStream.close()
-            json = String(buffer, Charset.forName("UTF-8"))
-
-            if (json.isNotEmpty()) Mapper.jsonToChapters(json)
-
-        return json
+    private fun mapJson(json: String): ArrayList<Chapter>{
+        val gson = Gson()
+        val listType = object : TypeToken<ArrayList<Chapter>>() {
+        }.type
+        return  gson.fromJson(json, listType)
     }
 
 }

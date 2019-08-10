@@ -7,12 +7,10 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
-import com.cloudfy.warInstructions.entities.Paragraph
 import kotlinx.android.synthetic.main.fragment_content.*
-import kotlinx.android.synthetic.main.fragment_sub_index.*
 
 class ContentFragment : BaseFragment() {
-    private var paragraphs: ArrayList<Paragraph> = ArrayList()
+    private var paragraphs: ArrayList<String> = ArrayList()
     private lateinit var contentAdapter: ContentAdapter
     private val args: ContentFragmentArgs by navArgs()
 

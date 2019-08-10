@@ -1,7 +1,6 @@
 package com.cloudfy.warInstructions.content
 
 import com.cloudfy.warInstructions.entities.Chapter
-import com.cloudfy.warInstructions.entities.Paragraph
 import com.cloudfy.warInstructions.entities.Subchapter
 
 object ChaptersManager {
@@ -15,32 +14,11 @@ object ChaptersManager {
             Subchapter(
                 title = "La Patria y la Bandera", index = 1,
                 paragrahps = arrayListOf(
-                    Paragraph(content = "Forman parte también de esta Patria lo buques de guerra o mercantes que ostenten la bandera española, aún cuando naveguen por los mares más lejanos"),
-                    Paragraph(content = "La patria es el pais en que se ha nacido. Para los españoles, la patria es España, con todos los territorios que la integran. No es solamente el pedazo de tierra que los vió nacer: es toda la Nación española."),
-                    Paragraph(content = "La patria es todo el raudal de la tradición de un pueblo y todo el firmamento de su esperanza (Maura.)"),
-                    Paragraph(content = "La patria es la imagen de una vasta familia (Campoamor.)"),
-                    Paragraph(content = "España es una nación toda gloria e ideal, entusiasmo vibrante y noble bravura. (Andrés Piquemal, militar francés.)"),
-                    Paragraph(content = "Desde que he visto al español en su patria comprendo mejor su orgullo, su frugalidad, su templanza y su entereza. (Washington Irving, literario norteamericano.)")
                 )
             ),
             Subchapter(
                 title = "El amor a la patría", index = 2,
                 paragrahps = arrayListOf(
-                    Paragraph(content = "No puede concebirse la existencia de un hombre que no ame a su Patria. El que no es capaz de amarla lo es de aborrecer a su madre; es indigno de pertener a la especie humana"),
-                    Paragraph(
-                        content = "Los pueblos más incultos de la Tierra, las razas más desdichadas, desde que el mundo existe , han experimentado el impulso irresistible del patriotismo. Aún aquellos que viven en tierras estériles " +
-                                "e ingratas, bajo climas crudos aislados del resto de los mortales, luchando de continuo con el hambre, aman apasionadamente a su Patria. Son como aquellos hijos" +
-                                "a quienes el amor a su madre no les permite ver sus defectos."
-                    ),
-                    Paragraph(content = "El patriotismo es un sentimiento fuerte y dulce que espontáneamente siente todo ciudadano digno de este nombre"),
-                    Paragraph(
-                        content = "Vuestro pueblo forma parte integrante de vuestra Patria, y ese sentimiento de amor que experimentaís ha d eimpulsaros a conservar esa virtud que se llama patriotismo, la más esencial" +
-                                "en todo buen ciudadano"
-                    ),
-                    Paragraph(content = "El amor a la Patria es un gran principio que nace con toda hombre. (Ros De Olano.)"),
-                    Paragraph(content = "Con laPatria se está, con razón y sin ella , como se está con el padre y con la madre. (Cánovas.)"),
-                    Paragraph(content = "No se ama a la Patria porque es grande, sino porque es nuestra. (Séneca.)")
-
                 )
             ),
             Subchapter(title = "Deberes del hombre para con la patría", index = 3),
@@ -57,37 +35,25 @@ object ChaptersManager {
             Subchapter(
                 title = "¿Qué es la Marina?", index = 1,
                 paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+
                 )
             ),
             Subchapter(
                 title = "importancia de la Marina de guerra", index = 2,
                 paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+
                 )
             ),
             Subchapter(
                 title = "Lo que ha hecho la Marina española", index = 3,
                 paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+
                 )
             ),
             Subchapter(
                 title = "La bandera", index = 4,
                 paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+
                 )
             )
 
@@ -101,55 +67,37 @@ object ChaptersManager {
             Subchapter(
                 title = "Disciplina", index = 1,
                 paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+
                 )
             ),
             Subchapter(
                 title = "Subordinación", index = 2,
                 paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+
                 )
             ),
             Subchapter(
                 title = "Obediencia", index = 3,
                 paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+
                 )
             ),
             Subchapter(
                 title = "Valor", index = 4,
                 paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+
                 )
             ),
             Subchapter(
                 title = "Lealtad", index = 5,
                 paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+
                 )
             ),
             Subchapter(
                 title = "Honradez", index = 6,
                 paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
+
                 )
             )
 
@@ -164,634 +112,147 @@ object ChaptersManager {
                 title = "Posición militar del marinero", index = 1
                 ,
                 paragrahps = arrayListOf(
-                    Paragraph(content = "Es la posición de 'firmes', que puede ser sin armas o con ellas."),
-                    Paragraph(content = "Condición fundamental de esta posición es la inmovilidad absoluta. Es éste uno de los detalles en donde más se destaca la buena insrucción de una tropa."),
-                    Paragraph(content = "Son vicios frecuentes en una instrucción defectuosa los movimientos intempestivos de los individuos que componen una formación. Rascarse, espantarse las moscas, sujetarse el gorro, sonarse, escupir y toser" +
-                                " son las faltas más comunes, que, como todas las que alteren la quietud y el silencio en una formación, deben evitarse"),
-                    Paragraph(content = "El superior que os mande en ella procurará que la posición de firmes dure lo menos posile, atendiendo a que durante ella os exigirá la innmovilidad y el silencio más absolutos."),
-                    Paragraph(content = "Esta posición se adoptará al dar el superior la voz de 'Firmes'. Se dice también cuadrarse a esta posición, que se expone a continuación:\nLos talones, unidos, o lo más próximos que sea posible," +
+                    "Es la posición de 'firmes', que puede ser sin armas o con ellas.",
+                    "Condición fundamental de esta posición es la inmovilidad absoluta. Es éste uno de los detalles en donde más se destaca la buena insrucción de una tropa.",
+                    "Son vicios frecuentes en una instrucción defectuosa los movimientos intempestivos de los individuos que componen una formación. Rascarse, espantarse las moscas, sujetarse el gorro, sonarse, escupir y toser" +
+                            " son las faltas más comunes, que, como todas las que alteren la quietud y el silencio en una formación, deben evitarse",
+                    "El superior que os mande en ella procurará que la posición de firmes dure lo menos posile, atendiendo a que durante ella os exigirá la innmovilidad y el silencio más absolutos.",
+                    "Esta posición se adoptará al dar el superior la voz de 'Firmes'. Se dice también cuadrarse a esta posición, que se expone a continuación:\nLos talones, unidos, o lo más próximos que sea posible," +
                             " si no lo permite la configuración del individuo. Los pies, con las puntas hacia adelante ,formando ángulo, de manera que queden aproximadamente perpendiulares. Las piernas, extendidas. El peso del cuerpo," +
                             " soportado por igual por ambas. El pecho saliente, cuidado de no sacar  el vientre. Los hombros, retirados por igual hacia atrás. Los razos, extendidos, sin unir los codos al cuerpo. Las manos, ligeramente extenidas," +
-                            " con las palmas hacia atrás, tocando con los dedos índices las costuras exteriores del pantalón. La cabeza, derecha, erguida, sin sacar la barba. La vista, al frente.")
+                            " con las palmas hacia atrás, tocando con los dedos índices las costuras exteriores del pantalón. La cabeza, derecha, erguida, sin sacar la barba. La vista, al frente."
                 )
             ),
             Subchapter(
                 title = "Descanso en su lugar", index = 2
                 ,
                 paragrahps = arrayListOf(
-                    Paragraph(content = "De la posición de firmes se pasará a la de descanso cuando se oigan las siguientes voces:\nPrimera. 'En su lugar'.\nSegunda. 'Descanso'."),
-                    Paragraph(content = "A la segunda voz, sin modificar la situación del pie izquierdo, y sin varias la dirección del derecho, se llevará éste atrás y un poco a la derecha, hasta que su talón diste un pie del izquierdo," +
-                            " doblando ligeramente la rodilla izquierda; al mismo tiempo se colocará la mano derecha por delante del cuerpo con la palma vuelta hacia él, y  sobre ella la izquierda en igual dispocición, dejando los brazos naturalmente tendidos."),
-                    Paragraph(content = "En esta posición el marinero podrá moverse con libertad, pero conservando siempre uno de los pies en la línea de formación , de manera que para separar el pie izquierdo habrá de cuadrarse previamente y colocar en ella el derecho."),
-                    Paragraph(content = "Si el descanso ha de ser a discrección, se darán las voces siguientes:\nPrimera. 'A discreción'.\nSegunda. 'Descanso'.\nEl movimiento es como el anterior; pero tendrá el marinero libertad para hablar en voz baja."),
-                    Paragraph(content = "Para pasar de la posición de descanso a la de firmes se darán las voces:\nPrimera. 'Recluta' (o pelotón, o sección, etc.).\nSegunda. 'Firmes'.\nAl oir la primera, el marinero carga el peso del cuerpo sobre el pie que tenga delante," +
+                    "De la posición de firmes se pasará a la de descanso cuando se oigan las siguientes voces:\nPrimera. 'En su lugar'.\nSegunda. 'Descanso'.",
+                    "A la segunda voz, sin modificar la situación del pie izquierdo, y sin varias la dirección del derecho, se llevará éste atrás y un poco a la derecha, hasta que su talón diste un pie del izquierdo," +
+                            " doblando ligeramente la rodilla izquierda; al mismo tiempo se colocará la mano derecha por delante del cuerpo con la palma vuelta hacia él, y  sobre ella la izquierda en igual dispocición, dejando los brazos naturalmente tendidos.",
+                    "En esta posición el marinero podrá moverse con libertad, pero conservando siempre uno de los pies en la línea de formación , de manera que para separar el pie izquierdo habrá de cuadrarse previamente y colocar en ella el derecho.",
+                    "Si el descanso ha de ser a discrección, se darán las voces siguientes:\nPrimera. 'A discreción'.\nSegunda. 'Descanso'.\nEl movimiento es como el anterior; pero tendrá el marinero libertad para hablar en voz baja.",
+                    "Para pasar de la posición de descanso a la de firmes se darán las voces:\nPrimera. 'Recluta' (o pelotón, o sección, etc.).\nSegunda. 'Firmes'.\nAl oir la primera, el marinero carga el peso del cuerpo sobre el pie que tenga delante," +
                             " enderezará la pierna correspondiente y, elevando el talón del pie retrasado, esperará hasta oir la segunda voz. Cuando la oiga, llevará el pie retrasado al frente, quedando cuadrado.\nMuchas veces se omite la primera voz" +
-                            " y al oir la de firmes se harán los movimientos anteriores seguidos.")
+                            " y al oir la de firmes se harán los movimientos anteriores seguidos."
                 )
             ),
             Subchapter(
                 title = "Movimientos de cabeza", index = 3,
                 paragrahps = arrayListOf(
-                    Paragraph(content = "Voces:\nPrimera. Vista a la derecha (o a la izquierda).\nSegunda. Mar."),
-                    Paragraph(content = "A la segunda, el marinero volverá la cabeza hacia el costado que en la voz se indique, cuidando de no mover el cuerpo ni echar hacia adelante la cabeza. Así permanecrá hasta que se mande 'firmes' o 'vista al frente'.")
+                    "Voces:\nPrimera. Vista a la derecha (o a la izquierda).\nSegunda. Mar.",
+                    "A la segunda, el marinero volverá la cabeza hacia el costado que en la voz se indique, cuidando de no mover el cuerpo ni echar hacia adelante la cabeza. Así permanecrá hasta que se mande 'firmes' o 'vista al frente'."
                 )
             ),
             Subchapter(
                 title = "Giros a pie firme", index = 4,
                 paragrahps = arrayListOf(
-                    Paragraph(content = "Hacer frente a uno de los costados. Voces:\nPrimera. Derecha (o izquierda).\nSegunda. Mar."),
-                    Paragraph(content = "Para hacer derecha, a la primera voz o voz preventiva se cargará el peso del cuerpo simultáneamente sobre el talón del pie derecho y la punta del izquierdo. A la segunda voz o voz ejecutiva, apoyándose sobre la punta" +
+                    "Hacer frente a uno de los costados. Voces:\nPrimera. Derecha (o izquierda).\nSegunda. Mar.",
+                    "Para hacer derecha, a la primera voz o voz preventiva se cargará el peso del cuerpo simultáneamente sobre el talón del pie derecho y la punta del izquierdo. A la segunda voz o voz ejecutiva, apoyándose sobre la punta" +
                             " del pie izquierdo , y girando sobre él y el talón del derecho, volverá el cuerpo hacie el costado indicado, hasta dejar el pie derecho en la dirección que tendrá en el nuevo frente, y en ese momento llevará el pie izquierdo junto" +
                             " al derecho, quedando cuadredo al nuevo frente.\nEl movimiento hacia el costado izquierdo se ejecutará de modo análogo, utilizando como ejes de giro el talón del pie izquierdo y la punta del derecho," +
-                            " sobre la que se apoyará para hacer el movimiento."),
-                    Paragraph(content = "Girar a frente oblicuo. Voces:\nPrimera. Media vuelta.\nSegunda. Mar."),
-                    Paragraph(content = "El movimiento se hará como se indica en el caso anterior, sin hacer mas que medio giro al costado que se mande."),
-                    Paragraph(content = "Hacer frente a donde se tenía la espalda. Voces:\nPrimera. Media vuelta.\nSegunda Mar."),
-                    Paragraph(content = "A la segunda se harán sin precipitación dos giros seguidos a la derecha en la forma dicha, quedando el pecho donde se tenía la espalda. Al girar no se separarán los brazos del cuerpo.")
-                    )
+                            " sobre la que se apoyará para hacer el movimiento."
+                    ,
+                    "Girar a frente oblicuo. Voces:\nPrimera. Media vuelta.\nSegunda. Mar.",
+                    "El movimiento se hará como se indica en el caso anterior, sin hacer mas que medio giro al costado que se mande.",
+                    "Hacer frente a donde se tenía la espalda. Voces:\nPrimera. Media vuelta.\nSegunda Mar.",
+                    "A la segunda se harán sin precipitación dos giros seguidos a la derecha en la forma dicha, quedando el pecho donde se tenía la espalda. Al girar no se separarán los brazos del cuerpo."
+                )
             ),
             Subchapter(
                 title = "Marchar: distintos pasos", index = 5,
                 paragrahps = arrayListOf(
-                    Paragraph(content = "Paso Ordinario. Voces:\nPrimera. De frente.\nSegunda. Mar."),
-                    Paragraph(content = "Al oir la voz preventiva se cargará el peso del cuerpo sobre la pierna derecha, preparándose para empezar a andar con el pie izuierdo cuando se oiga la voz ejecuritva. Al marchar se llevará el cuerpo derecho," +
-                            " la cabeza levantada, el pecho fuera, los hombros retirados y la vista al frente. Se llevará el compás del paso con el ruido de la pisada, teniendo en cuenta que la velocidad  es de 130 pasos por minuto, y la longitud" +
-                            " de éstos, de 65 centímetros de talón a talón. Los brazos se moverán con soltura y acompasadamente con el paso, sin incurrir en exageraciones. Al llevarlos hacia adelante, las manos deben llegar a la altura de la cntura, sin pasar de ahí," +
-                            " y al llevarlos hacia atrás, las manos rebasarán ligeramente los muslos."),
-                    Paragraph(content = "Paso de maniobra. Voces:\nPrimera. Paso de maniobra.\nSegunda. Mar."),
-                    Paragraph(content = "")
+                    "Paso Ordinario. Voces:\nPrimera. De frente.\nSegunda. Mar.",
+                    "Al oir la voz preventiva se cargará el peso del cuerpo sobre la pierna derecha, preparándose para empezar a andar con el pie izuierdo cuando se oiga la voz ejecuritva. Al marchar se llevará el cuerpo derecho," +
+                                " la cabeza levantada, el pecho fuera, los hombros retirados y la vista al frente. Se llevará el compás del paso con el ruido de la pisada, teniendo en cuenta que la velocidad  es de 130 pasos por minuto, y la longitud" +
+                                " de éstos, de 65 centímetros de talón a talón. Los brazos se moverán con soltura y acompasadamente con el paso, sin incurrir en exageraciones. Al llevarlos hacia adelante, las manos deben llegar a la altura de la cntura, sin pasar de ahí," +
+                                " y al llevarlos hacia atrás, las manos rebasarán ligeramente los muslos."
+                    ,
+                     "Paso de maniobra. Voces:\nPrimera. Paso de maniobra.\nSegunda. Mar."
+
                 )
             ),
             Subchapter(
-                title = "Giros y cambios de dirección", index = 6,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Giros y cambios de dirección", index = 6
             ),
             Subchapter(
-                title = "Instrucción con armas", index = 7,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Instrucción con armas", index = 7
+
             ),
             Subchapter(
-                title = "Posición de firmes", index = 8,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Posición de firmes", index = 8
+
             ),
             Subchapter(
-                title = "Descanso en su lugar", index = 9,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Descanso en su lugar", index = 9
+
             ),
             Subchapter(
-                title = "Presentar el arma", index = 10,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Presentar el arma", index = 10
+
             ),
             Subchapter(
-                title = "Arma sobre el hombro", index = 11,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Arma sobre el hombro", index = 11
+
             ),
             Subchapter(
-                title = "Suspender el arma", index = 12,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Suspender el arma", index = 12
+
             ),
             Subchapter(
-                title = "Colgar las armas", index = 13,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Colgar las armas", index = 13
+
             ),
             Subchapter(
-                title = "Armar y envainar el cuchillo", index = 14,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Armar y envainar el cuchillo", index = 14
+
             ),
             Subchapter(
-                title = "Echar a tierra el arma", index = 15,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Echar a tierra el arma", index = 15
+
             ),
             Subchapter(
-                title = "Marchar con armas", index = 16,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Marchar con armas", index = 16
+
             ),
             Subchapter(title = "Marchar con el arma al hombro o suspendida", index = 17),
             Subchapter(
-                title = "Arma a la funerala", index = 18,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Arma a la funerala", index = 18
+
             ),
             Subchapter(
-                title = "Alineaciones", index = 19,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Alineaciones", index = 19
+
             ),
             Subchapter(
-                title = "Formación en fila", index = 20,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Formación en fila", index = 20
+
             ),
             Subchapter(
-                title = "Formación en comumna", index = 21,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Formación en comumna", index = 21
+
             ),
             Subchapter(
-                title = "Deshacer y restablecer la formación", index = 22,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Deshacer y restablecer la formación", index = 22
+
             ),
             Subchapter(
-                title = "Revistas y desfiles", index = 23,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Revistas y desfiles", index = 23
+
             ),
             Subchapter(
-                title = "Revista de armas", index = 24,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
+                title = "Revista de armas", index = 24
+
             )
         )
     )
-    private val chapterFive: Chapter = Chapter(
-        5,
-        title = "Instrucción de campaña"
-        , index = 5
-        , subchapters = arrayListOf(
-            Subchapter(
-                title = "El tiro de fusil", index = 1,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Idea general sobre el fenómeno del tiro", index = 2,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Manejo del alza", index = 3,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Posiciones del tirador", index = 4,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Cargar y montar el arma", index = 5,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Ponder el seguro", index = 6,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Graduar el alza", index = 7,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Apuntar", index = 8,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Retirar las armas estando apuntadas", index = 9,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Hacer fuego", index = 10,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Descargar el fusil o mosquetón", index = 11,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Descansar el arma", index = 12,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            )
-        )
-    )
-    private val chapterSix: Chapter = Chapter(
-        6,
-        title = "El tiro con granadas de mano y de fusil"
-        , index = 6
-        , subchapters = arrayListOf(
-            Subchapter(
-                title = "Características técnicas", index = 1,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Lanzamiento de a granada de mano", index = 2,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Posiciones del lanzador", index = 3,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Preparar la granada", index = 4,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "El lanzamiento", index = 5,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "La granada de fusil", index = 6,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Preparar el arma", index = 7,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Apuntar el arma", index = 8,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Observaciones", index = 9,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Utilización del terreno", index = 10,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Trincheras", index = 11,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            )
-        )
-    )
-    private val chapterSeven: Chapter = Chapter(
-        7,
-        title = "Protección contra los gases de combate"
-        , index = 7
-        , subchapters = arrayListOf(
-            Subchapter(
-                title = "Generalidades", index = 1,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Principales gases de combate", index = 2,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Métodos de ataque empleados", index = 3,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Cómo se efectua la protección contra gases", index = 4,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Auxilio a los accidentados", index = 5,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            )
-        )
-    )
-    private val chapterEight: Chapter = Chapter(
-        8,
-        title = "Obligaciones generales del centinela"
-        , index = 8
-        , subchapters = arrayListOf(
-            Subchapter(
-                title = "Importancia de la misión del centinela", index = 1,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Obligaciones del centinela", index = 2,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Idem del vigilante", index = 3,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            )
-        )
-    )
-    private val chapterNine: Chapter = Chapter(
-        9,
-        title = "El saludo militar"
-        , index = 9
-        , subchapters = arrayListOf(
-            Subchapter(
-                title = "Generalidades", index = 1,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Cómo se hace el saludo", index = 2,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Saludo con armas", index = 3,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Aclaraciones sobre el saludo", index = 4,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Cuándo no se saluda", index = 5,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Otras muestras de la cortesía militar", index = 6,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            )
-        )
-    )
-    private val chapterTen: Chapter = Chapter(
-        10,
-        title = "Las jerarquías en la Marina y en el Ejército"
-        , index = 10
-        , subchapters = arrayListOf(
-            Subchapter(
-                title = "Los que integran la marina", index = 1,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            ),
-            Subchapter(
-                title = "Empleos y divisas del Ejército", index = 2,
-                paragrahps = arrayListOf(
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = ""),
-                    Paragraph(content = "")
-                )
-            )
-        )
-    )
+
 
     fun addChapters() {
         chapters.add(chapterOne)
         chapters.add(chapterTwo)
         chapters.add(chapterThree)
         chapters.add(chapterFour)
-        chapters.add(chapterFive)
-        chapters.add(chapterSix)
-        chapters.add(chapterSeven)
-        chapters.add(chapterEight)
-        chapters.add(chapterNine)
-        chapters.add(chapterTen)
 
 
     }

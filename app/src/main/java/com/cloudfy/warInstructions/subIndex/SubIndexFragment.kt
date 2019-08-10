@@ -42,7 +42,7 @@ class SubIndexFragment : BaseFragment() {
         subIndexAdapter =
             SubIndexAdapter(activity = activity!! , items = subChapters) {
                 val bundle = Bundle()
-                bundle.putParcelableArray("paragraphs",it.paragrahps.toTypedArray())
+                bundle.putStringArray("paragraphs",it.paragrahps.toTypedArray())
                 bundle.putString("title",it.title)
                 this.findNavController().navigate(R.id.goToContentFragment,bundle)
             }

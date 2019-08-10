@@ -2,13 +2,11 @@ package com.cloudfy.warInstructions.home
 
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.core.app.ActivityCompat.finishAffinity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 import com.cloudfy.warInstructions.MainViewModel
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
@@ -20,13 +18,12 @@ import org.jetbrains.anko.support.v4.act
 
 
 class HomeFragment : BaseFragment() {
+
     private  var chapters: ArrayList<Chapter> = ArrayList()
     private val mainViewModel: MainViewModel by lazy {
         ViewModelProviders.of(this).get(MainViewModel()::class.java)
     }
-    private val bundle: Bundle by lazy {
-        Bundle()
-    }
+    private lateinit var bundle: Bundle
 
 
     override fun onCreateViewId(): Int {
@@ -36,11 +33,10 @@ class HomeFragment : BaseFragment() {
     override fun viewCreated(view: View?) {
         setButtonsListeners()
         initializeViewModel()
-        Log.v(
-            "taag", mainViewModel.readJson("data/war_book.json",baseActivity!!)
-        )
-
         initializeAds()
+        baseActivity?.let {
+            mainViewModel.getAllChapters(it)
+        }
     }
 
     private fun initializeAds(){
@@ -50,8 +46,7 @@ class HomeFragment : BaseFragment() {
     }
 
     private fun initializeViewModel(){
-        baseActivity?.let { activity ->
-            mainViewModel.getAllChapters(activity.application, activity = activity)
+        baseActivity?.let {
             mainViewModel.chaptersResponse.observe(this, Observer { chapters ->
                 chapters?.let {
                     this.chapters = it
@@ -62,7 +57,7 @@ class HomeFragment : BaseFragment() {
 
     private fun setButtonsListeners(){
         btnIndex.setOnClickListener {
-
+            bundle = Bundle()
             bundle.putParcelableArray("chapters", chapters.toTypedArray())
             this.findNavController().navigate(R.id.goToIndex, bundle)
         }
