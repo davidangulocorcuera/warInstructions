@@ -23,7 +23,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/test"
-                    android:fontFamily="@font/roboto_black"
+                    android:fontFamily="@font/roboto_medium"
                     android:textSize="@dimen/medium_font"
                     android:textColor="@color/white"
                     android:layout_gravity="center"
@@ -36,6 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:defaultNavHost="true"
+                app:navGraph="@navigation/main_graph"
         />
 
     </LinearLayout>

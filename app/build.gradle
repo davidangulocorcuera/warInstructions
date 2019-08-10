@@ -69,6 +69,4 @@ dependencies {
     // Google ads
     implementation 'com.google.android.gms:play-services-ads:18.1.1'
 
-
-
 }

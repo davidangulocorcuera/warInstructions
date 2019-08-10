@@ -2,10 +2,14 @@ package com.cloudfy.warInstructions.home
 
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.core.app.ActivityCompat.finishAffinity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.cloudfy.warInstructions.MainViewModel
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.entities.Chapter
@@ -16,30 +20,53 @@ import org.jetbrains.anko.support.v4.act
 
 
 class HomeFragment : BaseFragment() {
-    private lateinit var chapters: ArrayList<Chapter>
+    private  var chapters: ArrayList<Chapter> = ArrayList()
+    private val mainViewModel: MainViewModel by lazy {
+        ViewModelProviders.of(this).get(MainViewModel()::class.java)
+    }
+    private val bundle: Bundle by lazy {
+        Bundle()
+    }
+
 
     override fun onCreateViewId(): Int {
         return R.layout.fragment_home
     }
 
     override fun viewCreated(view: View?) {
-        val bundle = Bundle()
-        val args: HomeFragmentArgs by navArgs()
+        setButtonsListeners()
+        initializeViewModel()
+        Log.v(
+            "taag", mainViewModel.readJson("data/war_book.json",baseActivity!!)
+        )
 
-        chapters = ArrayList(args.chapters.toList())
+        initializeAds()
+    }
 
-        bundle.putParcelableArray("chapters", chapters.toTypedArray())
-
+    private fun initializeAds(){
         MobileAds.initialize(act, "ca-app-pub-1767954011690390~3917587805")
-
-
         val adRequest = AdRequest.Builder().build()
         adView.loadAd(adRequest)
+    }
 
+    private fun initializeViewModel(){
+        baseActivity?.let { activity ->
+            mainViewModel.getAllChapters(activity.application, activity = activity)
+            mainViewModel.chaptersResponse.observe(this, Observer { chapters ->
+                chapters?.let {
+                    this.chapters = it
+                }
+            })
+        }
+    }
 
+    private fun setButtonsListeners(){
         btnIndex.setOnClickListener {
+
+            bundle.putParcelableArray("chapters", chapters.toTypedArray())
             this.findNavController().navigate(R.id.goToIndex, bundle)
         }
+
         btnExit.setOnClickListener {
             finishAffinity(activity!!)
         }

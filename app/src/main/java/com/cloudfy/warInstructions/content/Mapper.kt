@@ -8,6 +8,6 @@ object Mapper {
     fun jsonToChapters(json: String){
         val gson = Gson()
         val post = gson.fromJson(json, Chapter::class.java)
-        Log.v("taag", post.toString())
+        Log.v("taag", json)
     }
 }
