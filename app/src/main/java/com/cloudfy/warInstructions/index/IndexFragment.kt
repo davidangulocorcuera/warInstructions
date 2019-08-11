@@ -26,6 +26,7 @@ class IndexFragment : BaseFragment() {
 
 
 
+
     override fun onCreateViewId(): Int {
         return R.layout.fragment_index
     }
@@ -44,22 +45,15 @@ class IndexFragment : BaseFragment() {
 
 
     }
-    override fun onDestroy() {
-        super.onDestroy()
-        showToolbar(false)
 
-    }
-
-    override fun onResume() {
-        super.onResume()
+    private fun initializeInterstitialAd(){
         MobileAds.initialize(act,
             "ca-app-pub-1767954011690390~3917587805")
-
         mInterstitialAd = InterstitialAd(act)
         mInterstitialAd.adUnitId = "ca-app-pub-1767954011690390/6028799726"
         mInterstitialAd.loadAd(AdRequest.Builder().build())
-
     }
+
     private fun initList() {
         val layoutManager = GridLayoutManager(activity, 1)
         rvIndex.layoutManager = layoutManager
@@ -73,17 +67,28 @@ class IndexFragment : BaseFragment() {
                 val bundle = Bundle()
                 bundle.putParcelableArray("subChapters",it.subchapters.toTypedArray())
                 bundle.putString("title",it.title)
-                if (mInterstitialAd.isLoaded) {
-                    mInterstitialAd.show()
-                } else {
-                    Log.d("TAG", "The interstitial wasn't loaded yet.")
-                }
+                loadAds()
                 this.findNavController().navigate(R.id.goToSubIndex, bundle)
             }
+    }
 
-//
+    private fun loadAds(){
+        if (mInterstitialAd.isLoaded) {
+            mInterstitialAd.show()
+        } else {
+            Log.d("TAG", "The interstitial wasn't loaded yet.")
+        }
+    }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        showToolbar(false)
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+        initializeInterstitialAd()
     }
 
 

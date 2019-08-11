@@ -8,8 +8,6 @@ import com.google.gson.annotations.SerializedName
 class Chapter(
 
 
-    @SerializedName("id")
-    var id: Int,
 
     @SerializedName("title")
     var title: String,
@@ -23,7 +21,6 @@ class Chapter(
 ): Parcelable {
 
     constructor(parcel: Parcel) : this(
-        parcel.readInt(),
         parcel.readString(),
         parcel.readInt(),
         TODO("subchapters")
@@ -31,7 +28,6 @@ class Chapter(
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeInt(id)
         parcel.writeString(title)
         parcel.writeInt(index)
     }
