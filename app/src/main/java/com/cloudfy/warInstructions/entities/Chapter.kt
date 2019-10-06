@@ -21,11 +21,11 @@ class Chapter(
 ): Parcelable {
 
     constructor(parcel: Parcel) : this(
+        
         parcel.readString(),
         parcel.readInt(),
         TODO("subchapters")
-    ) {
-    }
+    )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(title)

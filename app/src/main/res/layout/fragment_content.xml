@@ -8,7 +8,9 @@
              tools:context=".content.ContentFragment">
    <androidx.recyclerview.widget.RecyclerView
            android:layout_width="match_parent"
+           android:fadeScrollbars="false"
            android:id="@+id/rvContent"
+           android:scrollbars="vertical"
            android:layout_height="match_parent">
 
    </androidx.recyclerview.widget.RecyclerView>

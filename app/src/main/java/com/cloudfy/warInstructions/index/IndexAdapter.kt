@@ -10,7 +10,8 @@ import com.cloudfy.warInstructions.entities.Chapter
 import kotlinx.android.synthetic.main.index_item.view.*
 
 
-class IndexAdapter(val items: ArrayList<Chapter>, val activity: Activity, var onClick: (Chapter) -> Unit) : BaseRecyclerAdapter<Chapter, IndexAdapter.ViewHolder>() {
+class IndexAdapter(val items: ArrayList<Chapter>, val activity: Activity, var onClick: (Chapter) -> Unit) :
+    BaseRecyclerAdapter<Chapter, IndexAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context)
             .inflate(R.layout.index_item, parent, false)
@@ -32,6 +33,8 @@ class IndexAdapter(val items: ArrayList<Chapter>, val activity: Activity, var on
             setValues()
             view.setOnClickListener {
                 onClick(current)
+
+
             }
 
         }
