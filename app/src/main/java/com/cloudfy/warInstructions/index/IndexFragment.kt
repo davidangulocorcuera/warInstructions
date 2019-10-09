@@ -2,7 +2,6 @@ package com.cloudfy.warInstructions.index
 
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -11,19 +10,16 @@ import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.base.ConstantsManager
 import com.cloudfy.warInstructions.entities.Chapter
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.InterstitialAd
-import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.fragment_index.*
-import org.jetbrains.anko.support.v4.act
 
 
-class IndexFragment : BaseFragment() {
+class IndexFragment : BaseFragment(), IndexView {
+
     private lateinit var indexAdapter: IndexAdapter
     private var chapters: ArrayList<Chapter> = ArrayList()
-    private lateinit var mInterstitialAd: InterstitialAd
-
-
+    private val presenter: IndexPresenter by lazy { IndexPresenter(this) }
+    private val args: IndexFragmentArgs by navArgs()
+    private val bundle: Bundle by lazy {Bundle()}
 
 
     override fun onCreateViewId(): Int {
@@ -35,21 +31,9 @@ class IndexFragment : BaseFragment() {
         setToolbarBackButton(true)
         showToolbar(true)
         initList()
-        if(chapters.isEmpty()){
-            val args: IndexFragmentArgs by navArgs()
-            chapters = ArrayList(args.chapters.toList())
-            indexAdapter.addAll(chapters)
+        if (chapters.isEmpty()) {
+            presenter.getData(args)
         }
-
-
-
-    }
-
-    private fun initializeInterstitialAd(){
-        MobileAds.initialize(act,"ca-app-pub-1767954011690390~3917587805")
-        mInterstitialAd = InterstitialAd(act)
-        mInterstitialAd.adUnitId = "ca-app-pub-1767954011690390/6028799726"
-        mInterstitialAd.loadAd(AdRequest.Builder().build())
     }
 
     private fun initList() {
@@ -59,23 +43,27 @@ class IndexFragment : BaseFragment() {
         rvIndex.adapter = indexAdapter
     }
 
+
+
     private fun setListListener() {
         indexAdapter =
-            IndexAdapter(activity = activity!! , items = chapters) {
-                val bundle = Bundle()
-                bundle.putParcelableArray(ConstantsManager.SUBCHAPTERS,it.subchapters.toTypedArray())
-                bundle.putString(ConstantsManager.TOOLBAR_TITLE,it.title)
-                loadAds()
-                this.findNavController().navigate(R.id.goToSubIndex, bundle)
+            IndexAdapter(activity = activity!!, items = chapters) {
+                goToSubIndexFragment(it)
             }
     }
 
-    private fun loadAds(){
-        if (mInterstitialAd.isLoaded) {
-            mInterstitialAd.show()
-        }
-        // else TODO showAdsError()
+    private fun goToSubIndexFragment(chapter: Chapter){
+        bundle.putParcelableArray(
+            ConstantsManager.SUBCHAPTERS,
+            chapter.subchapters.toTypedArray()
+        )
+        bundle.putString(ConstantsManager.TOOLBAR_TITLE, chapter.title)
+        this.findNavController().navigate(R.id.goToSubIndex, bundle)
+    }
 
+
+    override fun addChapters(chapters: ArrayList<Chapter>) {
+        indexAdapter.addAll(chapters)
     }
 
     override fun onDestroy() {
@@ -83,12 +71,5 @@ class IndexFragment : BaseFragment() {
         showToolbar(false)
 
     }
-
-    override fun onResume() {
-        super.onResume()
-        initializeInterstitialAd()
-    }
-
-
 
 }
