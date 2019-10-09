@@ -7,7 +7,7 @@
 
     <fragment
             android:id="@+id/homeFragment"
-            android:name="com.cloudfy.warInstructions.home.HomeFragment"
+            android:name="com.onion.warInstructions.home.HomeFragment"
             android:label="fragment_home"
             tools:layout="@layout/fragment_home">
         <action
@@ -16,16 +16,16 @@
                 app:popUpTo="@id/homeFragment" />
         <argument
                 android:name="chapters"
-                app:argType="com.cloudfy.warInstructions.entities.Chapter[]" />
+                app:argType="com.onion.warInstructions.entities.Chapter[]" />
     </fragment>
     <fragment
             android:id="@+id/indexFragment"
-            android:name="com.cloudfy.warInstructions.index.IndexFragment"
+            android:name="com.onion.warInstructions.index.IndexFragment"
             android:label="fragment_index"
             tools:layout="@layout/fragment_index">
         <argument
                 android:name="chapters"
-                app:argType="com.cloudfy.warInstructions.entities.Chapter[]" />
+                app:argType="com.onion.warInstructions.entities.Chapter[]" />
         <action
                 android:id="@+id/goToSubIndex"
                 app:destination="@id/subIndexFragment" />
@@ -35,12 +35,12 @@
             app:destination="@id/homeFragment" />
     <fragment
             android:id="@+id/subIndexFragment"
-            android:name="com.cloudfy.warInstructions.subIndex.SubIndexFragment"
+            android:name="com.onion.warInstructions.subIndex.SubIndexFragment"
             android:label="fragment_sub_index"
             tools:layout="@layout/fragment_sub_index">
         <argument
                 android:name="subChapters"
-                app:argType="com.cloudfy.warInstructions.entities.Subchapter[]" />
+                app:argType="com.onion.warInstructions.entities.Subchapter[]" />
         <argument
                 android:name="title"
                 app:argType="string" />
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
             android:id="@+id/contentFragment"
-            android:name="com.cloudfy.warInstructions.content.ContentFragment"
+            android:name="com.onion.warInstructions.content.ContentFragment"
             android:label="fragment_content"
             tools:layout="@layout/fragment_content">
         <argument

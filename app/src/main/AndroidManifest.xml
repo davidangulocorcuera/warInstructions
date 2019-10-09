@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.cloudfy.warInstructions">
+          xmlns:tools="http://schemas.android.com/tools" package="com.onion.warInstructions">
     <uses-permission android:name="android.permission.INTERNET" />
     <application
             android:allowBackup="true"
@@ -13,7 +13,7 @@
         <meta-data
                 android:name="com.google.android.gms.ads.APPLICATION_ID"
                 android:value="ca-app-pub-1767954011690390~3917587805"/>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.onion.warInstructions.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
