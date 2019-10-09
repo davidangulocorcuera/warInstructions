@@ -1,16 +1,11 @@
 <resources>
-    <string name="app_name">warInstructions</string>
+    <string name="app_name">Marina Española</string>
     <string name="content">Contenido</string>
     <string name="exit">Salir</string>
     <string name="index">Índice</string>
     <string name="roman_four">IV</string>
     <string name="index_decoration">-</string>
-
-
-    <string name="cebolla">El cultivo de la cebolla. El origen primario de la cebolla se localiza en Asia central, y
-        como centro secundario el Mediterráneo, pues se trata de una de las hortalizas de consumo más antigua. Las
-        primeras referencias se remontan hacia 3.200 a.C. pues fue muy cultivada por los egipcios, griegos y romanos
-    </string>
     <string name="test">test</string>
+    <string name="example_text">example</string>
 
 </resources>

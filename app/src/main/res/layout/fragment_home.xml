@@ -1,71 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".home.HomeFragment">
-
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="vertical"
-    >
-
-        <ImageView android:layout_width="@dimen/big_space"
-                   android:layout_height="@dimen/biggest_space"
-                   android:layout_gravity="center"
-                   android:src="@drawable/anchor"
-                   android:tint="@color/green"
-                   android:layout_margin="@dimen/space_medium"
-        />
-
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:orientation="vertical"
-                      android:padding="@dimen/space_medium"
-                      android:layout_gravity="center"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".home.HomeFragment"
+        android:orientation="vertical"
         >
-            <Button android:layout_width="match_parent"
-                    android:id="@+id/btnIndex"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/space_medium"
-                    android:background="@drawable/round_button"
-                    android:text="@string/index"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/medium_big_font"
-                    android:padding="@dimen/space_small"
-                    android:textAllCaps="false"
-                    android:clickable="true"
-                    android:fontFamily="@font/roboto_regular"
-                    android:focusable="true"/>
 
-            <Button android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/space_medium"
-                    android:background="@drawable/round_button"
-                    android:text="@string/exit"
-                    android:id="@+id/btnExit"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/medium_big_font"
-                    android:padding="@dimen/space_small"
-                    android:textAllCaps="false"
-                    android:clickable="true"
-                    android:fontFamily="@font/roboto_regular"
-                    android:focusable="true"/>
-
-
-        </LinearLayout>
-
-        <com.google.android.gms.ads.AdView
-                xmlns:ads="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/adView"
+        <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                ads:adSize="SMART_BANNER"
-                ads:adUnitId="ca-app-pub-1767954011690390/5602204566">
-        </com.google.android.gms.ads.AdView>
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_medium">
+
+                <ImageView
+                        android:layout_width="@dimen/big_space"
+                        android:layout_height="@dimen/biggest_space"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/space_medium"
+                        android:src="@drawable/anchor"
+                        android:tint="@color/green" />
+
+                <Button
+                        android:id="@+id/btnIndex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space_medium"
+                        android:background="@drawable/round_button"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/space_small"
+                        android:text="@string/index"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/medium_big_font" />
+
+                <Button
+                        android:id="@+id/btnExit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space_medium"
+                        android:background="@drawable/round_button"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/space_small"
+                        android:text="@string/exit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/medium_big_font" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-1767954011690390/5602204566" />
     </LinearLayout>
 
 
-</FrameLayout>

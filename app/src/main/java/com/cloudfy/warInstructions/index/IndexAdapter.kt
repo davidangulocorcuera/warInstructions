@@ -33,10 +33,7 @@ class IndexAdapter(val items: ArrayList<Chapter>, val activity: Activity, var on
             setValues()
             view.setOnClickListener {
                 onClick(current)
-
-
             }
-
         }
 
         private fun setValues() {

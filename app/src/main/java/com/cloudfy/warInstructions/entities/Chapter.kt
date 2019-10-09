@@ -22,7 +22,7 @@ class Chapter(
 
     constructor(parcel: Parcel) : this(
         
-        parcel.readString(),
+        parcel.readString()!!,
         parcel.readInt(),
         TODO("subchapters")
     )

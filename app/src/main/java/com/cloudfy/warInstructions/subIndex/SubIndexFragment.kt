@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
+import com.cloudfy.warInstructions.base.ConstantsManager
 import com.cloudfy.warInstructions.entities.Subchapter
 import kotlinx.android.synthetic.main.fragment_sub_index.*
 
@@ -42,8 +43,8 @@ class SubIndexFragment : BaseFragment() {
         subIndexAdapter =
             SubIndexAdapter(activity = activity!! , items = subChapters) {
                 val bundle = Bundle()
-                bundle.putStringArray("paragraphs",it.paragrahps.toTypedArray())
-                bundle.putString("title",it.title)
+                bundle.putStringArray(ConstantsManager.PHARAGRAPHS,it.paragrahps.toTypedArray())
+                bundle.putString(ConstantsManager.TOOLBAR_TITLE,it.title)
                 this.findNavController().navigate(R.id.goToContentFragment,bundle)
             }
     }

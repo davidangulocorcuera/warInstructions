@@ -1,31 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main_graph"
-            app:startDestination="@id/homeFragment">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_graph"
+        app:startDestination="@id/homeFragment">
 
-    <fragment android:id="@+id/homeFragment" android:name="com.cloudfy.warInstructions.home.HomeFragment"
-              android:label="fragment_home" tools:layout="@layout/fragment_home">
-        <action android:id="@+id/goToIndex" app:destination="@id/indexFragment" app:popUpTo="@id/homeFragment"/>
-        <argument android:name="chapters" app:argType="com.cloudfy.warInstructions.entities.Chapter[]"
-        />
+    <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.cloudfy.warInstructions.home.HomeFragment"
+            android:label="fragment_home"
+            tools:layout="@layout/fragment_home">
+        <action
+                android:id="@+id/goToIndex"
+                app:destination="@id/indexFragment"
+                app:popUpTo="@id/homeFragment" />
+        <argument
+                android:name="chapters"
+                app:argType="com.cloudfy.warInstructions.entities.Chapter[]" />
     </fragment>
-    <fragment android:id="@+id/indexFragment" android:name="com.cloudfy.warInstructions.index.IndexFragment"
-              android:label="fragment_index" tools:layout="@layout/fragment_index">
-        <argument android:name="chapters" app:argType="com.cloudfy.warInstructions.entities.Chapter[]"/>
-        <action android:id="@+id/goToSubIndex" app:destination="@id/subIndexFragment"/>
+    <fragment
+            android:id="@+id/indexFragment"
+            android:name="com.cloudfy.warInstructions.index.IndexFragment"
+            android:label="fragment_index"
+            tools:layout="@layout/fragment_index">
+        <argument
+                android:name="chapters"
+                app:argType="com.cloudfy.warInstructions.entities.Chapter[]" />
+        <action
+                android:id="@+id/goToSubIndex"
+                app:destination="@id/subIndexFragment" />
     </fragment>
-    <action android:id="@+id/goToHomeFragment" app:destination="@id/homeFragment"/>
-    <fragment android:id="@+id/subIndexFragment" android:name="com.cloudfy.warInstructions.subIndex.SubIndexFragment"
-              android:label="fragment_sub_index" tools:layout="@layout/fragment_sub_index">
-        <argument android:name="subChapters" app:argType="com.cloudfy.warInstructions.entities.Subchapter[]"/>
-        <argument android:name="title" app:argType="string"/>
-        <action android:id="@+id/goToContentFragment" app:destination="@id/contentFragment"/>
+    <action
+            android:id="@+id/goToHomeFragment"
+            app:destination="@id/homeFragment" />
+    <fragment
+            android:id="@+id/subIndexFragment"
+            android:name="com.cloudfy.warInstructions.subIndex.SubIndexFragment"
+            android:label="fragment_sub_index"
+            tools:layout="@layout/fragment_sub_index">
+        <argument
+                android:name="subChapters"
+                app:argType="com.cloudfy.warInstructions.entities.Subchapter[]" />
+        <argument
+                android:name="title"
+                app:argType="string" />
+        <action
+                android:id="@+id/goToContentFragment"
+                app:destination="@id/contentFragment" />
     </fragment>
-    <fragment android:id="@+id/contentFragment" android:name="com.cloudfy.warInstructions.content.ContentFragment"
-              android:label="fragment_content" tools:layout="@layout/fragment_content">
-        <argument android:name="paragraphs" app:argType="string[]"/>
-        <argument android:name="title" app:argType="string"/>
+    <fragment
+            android:id="@+id/contentFragment"
+            android:name="com.cloudfy.warInstructions.content.ContentFragment"
+            android:label="fragment_content"
+            tools:layout="@layout/fragment_content">
+        <argument
+                android:name="paragraphs"
+                app:argType="string[]" />
+        <argument
+                android:name="title"
+                app:argType="string" />
     </fragment>
 
 </navigation>

@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <TextView android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text="@string/cebolla"
-             android:layout_marginTop="@dimen/space_medium_small"
-              android:layout_marginBottom="@dimen/space_medium_small"
-              android:paddingEnd="@dimen/space_medium"
-              android:paddingStart="@dimen/space_medium"
-              android:id="@+id/tvContent"
-              android:layout_gravity="center"
-              android:textSize="@dimen/medium_small_font"
-              android:textColor="@color/black"
-              android:fontFamily="@font/roboto_regular"
-    />
+    <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_medium_small"
+            android:layout_marginBottom="@dimen/space_medium_small"
+            android:fontFamily="@font/roboto_light"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="3dp"
+            android:paddingStart="@dimen/space_medium"
+            android:paddingEnd="@dimen/space_medium"
+            android:text="@string/example_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_small_font" />
 </LinearLayout>

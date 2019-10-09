@@ -10,6 +10,7 @@ import com.cloudfy.warInstructions.entities.Chapter
 
 class HomeViewModel : ViewModel() {
 
+
     val chapters = MutableLiveData<ArrayList<Chapter>>()
     val chaptersResponse: MutableLiveData<ArrayList<Chapter>> by lazy {
         MutableLiveData<ArrayList<Chapter>>().also {
@@ -21,6 +22,8 @@ class HomeViewModel : ViewModel() {
         val chapters = getObjectsFromJson(getJson("data/war_book.json",activity))
         this.chaptersResponse.postValue(chapters)
     }
+
+
 
 
 

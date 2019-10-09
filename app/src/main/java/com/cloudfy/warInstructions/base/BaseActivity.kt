@@ -6,7 +6,7 @@ import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.utils.setVisible
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.toolbar.*
 
 
 abstract class BaseActivity : AppCompatActivity() {

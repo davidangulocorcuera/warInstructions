@@ -1,56 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                                   xmlns:app="http://schemas.android.com/apk/res-auto"
-                                   android:layout_width="match_parent"
-                                   android:layout_height="wrap_content"
-                                   style="@style/Clickable"
->
-    <LinearLayout android:layout_width="match_parent"
-                  android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/Clickable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-                  android:layout_height="wrap_content"
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-    >
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:minHeight="85dp"
-                      android:orientation="horizontal"
-                      android:padding="@dimen/space_medium"
+            android:orientation="vertical"
+
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="85dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_medium"
 
 
-        >
-            <TextView android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:text="@string/roman_four"
-                      android:textColor="@color/green"
-                      android:id="@+id/tvNumberIndex"
-                      android:layout_marginStart="@dimen/space_medium"
-                      android:fontFamily="@font/roboto_regularitalic"
-                      android:textSize="@dimen/medium_font"
-                      android:layout_gravity="center_vertical"
-            />
-            <TextView android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:text="@string/index_decoration"
-                      android:textColor="@color/green"
-                      android:layout_marginStart="@dimen/space_small"
-                      android:layout_marginEnd="@dimen/space_medium"
-                      android:layout_gravity="center_vertical"
-                      android:fontFamily="@font/roboto_regularitalic"
-                      android:textSize="@dimen/medium_font"
-            />
-            <TextView android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:text="La patria y la bandera."
-                      android:textColor="@color/black"
-                      android:id="@+id/tvTitle"
-                      android:fontFamily="@font/roboto_regular"
-                      android:textSize="@dimen/medium_font"
-                      android:layout_gravity="center_vertical"/>
+                >
+
+            <TextView
+                    android:id="@+id/tvNumberIndex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/space_medium"
+                    android:fontFamily="@font/roboto_regularitalic"
+                    android:text="@string/roman_four"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/medium_font" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/space_small"
+                    android:layout_marginEnd="@dimen/space_medium"
+                    android:fontFamily="@font/roboto_regularitalic"
+                    android:text="@string/index_decoration"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/medium_font" />
+
+            <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto_regular"
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_font"
+                    tools:text="La patria y la bandera." />
         </LinearLayout>
-        <View android:layout_width="match_parent"
-              android:layout_height="1dp"
-              android:background="@color/transparentBlack"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/transparentBlack" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

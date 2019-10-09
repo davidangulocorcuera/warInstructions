@@ -4,14 +4,13 @@ package com.cloudfy.warInstructions.index
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
+import com.cloudfy.warInstructions.base.ConstantsManager
 import com.cloudfy.warInstructions.entities.Chapter
-import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.InterstitialAd
 import com.google.android.gms.ads.MobileAds
@@ -32,7 +31,7 @@ class IndexFragment : BaseFragment() {
     }
 
     override fun viewCreated(view: View?) {
-        setToolbarTitle("Índice")
+        setToolbarTitle(getString(R.string.index))
         setToolbarBackButton(true)
         showToolbar(true)
         initList()
@@ -47,8 +46,7 @@ class IndexFragment : BaseFragment() {
     }
 
     private fun initializeInterstitialAd(){
-        MobileAds.initialize(act,
-            "ca-app-pub-1767954011690390~3917587805")
+        MobileAds.initialize(act,"ca-app-pub-1767954011690390~3917587805")
         mInterstitialAd = InterstitialAd(act)
         mInterstitialAd.adUnitId = "ca-app-pub-1767954011690390/6028799726"
         mInterstitialAd.loadAd(AdRequest.Builder().build())
@@ -65,8 +63,8 @@ class IndexFragment : BaseFragment() {
         indexAdapter =
             IndexAdapter(activity = activity!! , items = chapters) {
                 val bundle = Bundle()
-                bundle.putParcelableArray("subChapters",it.subchapters.toTypedArray())
-                bundle.putString("title",it.title)
+                bundle.putParcelableArray(ConstantsManager.SUBCHAPTERS,it.subchapters.toTypedArray())
+                bundle.putString(ConstantsManager.TOOLBAR_TITLE,it.title)
                 loadAds()
                 this.findNavController().navigate(R.id.goToSubIndex, bundle)
             }
@@ -75,9 +73,9 @@ class IndexFragment : BaseFragment() {
     private fun loadAds(){
         if (mInterstitialAd.isLoaded) {
             mInterstitialAd.show()
-        } else {
-            Log.d("TAG", "The interstitial wasn't loaded yet.")
         }
+        // else TODO showAdsError()
+
     }
 
     override fun onDestroy() {

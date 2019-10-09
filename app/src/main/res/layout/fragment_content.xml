@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:id="@+id/contentLayout"
-             tools:context=".content.ContentFragment">
-   <androidx.recyclerview.widget.RecyclerView
-           android:layout_width="match_parent"
-           android:fadeScrollbars="false"
-           android:id="@+id/rvContent"
-           android:scrollbars="vertical"
-           android:layout_height="match_parent">
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".content.ContentFragment">
 
-   </androidx.recyclerview.widget.RecyclerView>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical">
 
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </LinearLayout>

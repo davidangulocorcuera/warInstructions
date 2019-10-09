@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.fragment_content.*
 class ContentFragment : BaseFragment() {
     private var paragraphs: ArrayList<String> = ArrayList()
     private lateinit var contentAdapter: ContentAdapter
-    private val args: ContentFragmentArgs by navArgs()
+    private val args: ContentFragmentArgs by this.navArgs()
 
     override fun onCreateViewId(): Int {
         return R.layout.fragment_content
