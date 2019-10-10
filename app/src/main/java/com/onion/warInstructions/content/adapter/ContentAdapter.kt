@@ -1,4 +1,4 @@
-package com.onion.warInstructions.content
+package com.onion.warInstructions.content.adapter
 
 import android.app.Activity
 import android.view.LayoutInflater
