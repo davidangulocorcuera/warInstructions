@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.onion.warInstructions.R
 import com.onion.warInstructions.utils.setVisible
 import kotlinx.android.synthetic.main.toolbar.*
@@ -50,14 +52,13 @@ abstract class BaseActivity : AppCompatActivity() {
 
     fun setToolbarBackButton(show: Boolean){
         this.supportActionBar?.setDisplayHomeAsUpEnabled(show)
-        this.supportActionBar?.setDisplayShowHomeEnabled(show)
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
     }
+
 
 
 }

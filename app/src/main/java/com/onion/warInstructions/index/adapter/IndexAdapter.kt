@@ -15,7 +15,6 @@ class IndexAdapter(val items: ArrayList<Chapter>, val activity: Activity, var on
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context)
             .inflate(R.layout.index_item, parent, false)
-
         return ViewHolder(v)
     }
 
@@ -34,12 +33,12 @@ class IndexAdapter(val items: ArrayList<Chapter>, val activity: Activity, var on
             view.setOnClickListener {
                 onClick(current)
             }
+
         }
 
         private fun setValues() {
-            view.tvNumberIndex.text = current.index.toString()
             view.tvTitle.text = current.title
-
+            view.ivStartIcon.setImageResource(R.drawable.ic_eye)
         }
 
     }

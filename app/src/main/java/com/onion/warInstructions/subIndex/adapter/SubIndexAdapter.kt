@@ -38,7 +38,6 @@ class SubIndexAdapter(val items: ArrayList<Subchapter>, val activity: Activity, 
         }
 
         private fun setValues() {
-            view.tvNumberIndex.text = current.index.toString()
             view.tvTitle.text = current.title
 
         }

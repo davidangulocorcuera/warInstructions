@@ -30,6 +30,7 @@ class HomeFragment : BaseFragment() {
     override fun viewCreated(view: View?) {
         setButtonsListeners()
         initializeViewModel()
+        setToolbarBackButton(true)
         baseActivity?.let {
             homeViewModel.getAllChapters(it)
         }

@@ -29,7 +29,6 @@ class IndexFragment : BaseFragment(), IndexView {
 
     override fun viewCreated(view: View?) {
         setToolbarTitle(getString(R.string.index))
-        setToolbarBackButton(true)
         showToolbar(true)
         initList()
         if (chapters.isEmpty()) {
