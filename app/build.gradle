@@ -12,11 +12,11 @@ apply plugin: "androidx.navigation.safeargs.kotlin"
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.onion.warInstructions"
+        applicationId "com.cloudfy.warInstructions"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 3
+        versionName "1.0.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         javaCompileOptions {
@@ -69,6 +69,8 @@ dependencies {
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0"
     implementation "android.arch.lifecycle:extensions:1.1.1"
+
+
 
 
 }
