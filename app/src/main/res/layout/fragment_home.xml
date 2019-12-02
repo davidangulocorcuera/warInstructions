@@ -12,7 +12,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/space_medium"
                     android:src="@drawable/anchor"
-                    android:tint="@color/green" />
+                    android:tint="@color/colorAccent" />
 
             <Button
                     android:id="@+id/btnIndex"
@@ -22,7 +22,7 @@
                     android:background="@drawable/round_button"
                     android:clickable="true"
                     android:focusable="true"
-                    android:fontFamily="@font/roboto_regular"
+                    android:fontFamily="@font/open_sans_regular"
                     android:padding="@dimen/space_small"
                     android:text="@string/index"
                     android:textAllCaps="false"
@@ -37,7 +37,7 @@
                     android:background="@drawable/round_button"
                     android:clickable="true"
                     android:focusable="true"
-                    android:fontFamily="@font/roboto_regular"
+                    android:fontFamily="@font/open_sans_regular"
                     android:padding="@dimen/space_small"
                     android:text="@string/exit"
                     android:textAllCaps="false"

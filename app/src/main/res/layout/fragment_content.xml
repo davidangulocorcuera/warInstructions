@@ -5,17 +5,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".content.ContentFragment"
-        >
+        tools:context=".content.ContentFragment">
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvContent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fadeScrollbars="false"
-            android:scrollbars="vertical">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-
+            android:scrollbarSize="@dimen/space_small"
+            android:scrollbarThumbVertical="@drawable/scroll_shape"
+            android:scrollbars="vertical" />
 </LinearLayout>

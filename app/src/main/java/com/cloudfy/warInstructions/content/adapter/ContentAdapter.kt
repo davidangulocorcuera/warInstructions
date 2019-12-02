@@ -9,7 +9,10 @@ import com.cloudfy.warInstructions.base.BaseRecyclerAdapter
 import kotlinx.android.synthetic.main.paragraph_item.view.*
 
 
-class ContentAdapter(val items: ArrayList<String>, val activity: Activity) : BaseRecyclerAdapter<String, ContentAdapter.ViewHolder>() {
+
+
+class ContentAdapter(val items: ArrayList<String>, val activity: Activity) : BaseRecyclerAdapter<String, ContentAdapter.ViewHolder>(){
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context)
             .inflate(R.layout.paragraph_item, parent, false)
@@ -37,4 +40,6 @@ class ContentAdapter(val items: ArrayList<String>, val activity: Activity) : Bas
         }
 
     }
+
+
 }

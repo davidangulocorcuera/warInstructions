@@ -6,9 +6,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <application
             android:allowBackup="true"
-            android:icon="@drawable/war_logo"
+            android:icon="@mipmap/main_logo"
             android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:roundIcon="@mipmap/main_logo"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">

@@ -6,6 +6,7 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.base.ConstantsManager
@@ -39,7 +40,7 @@ class SubIndexFragment : BaseFragment(), SubIndexView {
     }
 
     private fun initList() {
-        val layoutManager = GridLayoutManager(activity, 1)
+        val layoutManager = LinearLayoutManager(context)
         rvSubIndex.layoutManager = layoutManager
         setListListener()
         rvSubIndex.adapter = subIndexAdapter

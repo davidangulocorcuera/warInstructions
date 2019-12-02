@@ -29,15 +29,15 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginEnd="@dimen/space_medium"
                     android:src="@drawable/ic_book"
-                    android:tint="@color/green" />
+                    android:tint="@color/colorAccent" />
 
             <TextView
                     android:id="@+id/tvTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:fontFamily="@font/roboto_regular"
-                    android:letterSpacing="0.03"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:letterSpacing="0.01"
                     android:textColor="@color/black"
                     android:textSize="@dimen/medium_font"
                     tools:text="La patria y la bandera." />

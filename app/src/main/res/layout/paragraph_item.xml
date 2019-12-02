@@ -11,7 +11,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/space_medium_small"
             android:layout_marginBottom="@dimen/space_medium_small"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/roboto_regular"
             android:letterSpacing="0.05"
             android:lineSpacingExtra="3dp"
             android:paddingStart="@dimen/space_medium"

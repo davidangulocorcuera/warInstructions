@@ -6,6 +6,7 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.base.ConstantsManager
@@ -37,7 +38,7 @@ class IndexFragment : BaseFragment(), IndexView {
     }
 
     private fun initList() {
-        val layoutManager = GridLayoutManager(activity, 1)
+        val layoutManager = LinearLayoutManager(context)
         rvIndex.layoutManager = layoutManager
         setListListener()
         rvIndex.adapter = indexAdapter

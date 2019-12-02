@@ -199,7 +199,7 @@
 		]
 	},
 	{
-		"title": "La instrucción militar",
+		"title": "Instrucción militar general",
 		"index": 4,
 		"subchapters": [
 			{
@@ -478,6 +478,209 @@
 					"El marinero, a la segunda voz, tomará la posición de carguen y abrirá y cerrará dos veces seguidas el cajón del mecanismo, llevando a continuación empuñado el fusil o mosquetón con la mano izquierda sobre el hombro de este mismo costado, de modo que quede el arma próximamente horizontal, apoyada por debajo del alza,  con la culata al frente y el cañón hacia arriba; al mismo tiempo se pondrá firmes. En la mano derecha conservará el cerrojo, que previamente habrá separado del arma, y lo presentará al superior que pase la revista, quien inspeccionará el arma y las municiones, asegurándose de que en aquélla no hay cuerpo extraño ni cartuchos en su interior, así como de su funcionamiento perfecto.",
 					"El movimiento lo irán haciendo lo marineros sucesivamente a medida que vaya pasando por delante el superior.",
 					"Una vez revistado, el marinero vuelve a la posición de carguen, introduce el cerrojo, cierra el cajón del mecanismo y descansa el arma."
+				]
+			}
+		]
+	},
+	{
+		"title": "La Instrucción de campaña",
+		"index": 5,
+		"subchapters": [
+			{
+				"title": "El tiro de fusil",
+				"index": 1,
+				"paragraphs": [
+					"El tiro de fusil. Definiciones",
+					"Trayectoria: La línea descrita por el proyectil durante su recorrido en el aire.",
+					"Origen de la treyectoria: El centro de la boca del arma en el momento del disparo.",
+					"Horizonte de alarma: El plano horizontal que pasa por el origen de la trayectoria.",
+					"Vértice de la trayectoria: El punto más elevado de la misma.\nLa parte de trayectoria comprendida entre el origen y el vértice se llama rama ascendente, y el resto de la trayectoria a partir del vertice, se denomina rama desccendente.",
+					"Punto de caida: El punto en el que la rama descendente de la trayectoria encuentra el horizonte del arma.",
+					"Duración: El tiempo, en segundos, que tarda el proyectil desde el origen al punto de caida.",
+					"Línea de tiro: La prolongación del eje del arma dispuesta para el disparo.",
+					"Plano de tiro: El plano vertical que pasa por la línea de tiro.",
+					"Línea de mira: La visual determinada por los puntos correspondientes de los elementos de puntería del arma  (muesca de la corredera del alza y punto de mira).",
+					"Alcance: La distancia desde el origen al punto de caída.",
+					"Impacto: Eal punto de choque del proyectil sobre el blanco o sobre el terreno.",
+					"Rendimiento de tiro: Tanto por ciento de impactos que se obtiene en un blanco.",
+					"Velocidad inicial: Es la que tiene la bala en el momento de salir por la boca del cañon",
+					"Velocidad remanente: La que conserva el proyectil en cualquier punto de su trayectoria."
+				]
+			},
+			{
+				"title": "Idea general sobre el fenómeno  del tiro",
+				"index": 2,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Manejo del alza",
+				"index": 3,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Cargar y montar el arma",
+				"index": 5,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Poner el seguro",
+				"index": 6,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Poner el seguro",
+				"index": 7,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Graduar el alza",
+				"index": 8,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Apuntar",
+				"index": 9,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Retirar las armas estando apuntadas",
+				"index": 10,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Hacer fuego",
+				"index": 11,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Descargar el fusil o mosquetón",
+				"index": 12,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Descansar el arma",
+				"index": 13,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
 				]
 			}
 		]

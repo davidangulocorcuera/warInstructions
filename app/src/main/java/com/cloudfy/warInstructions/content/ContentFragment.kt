@@ -3,7 +3,7 @@ package com.cloudfy.warInstructions.content
 
 import android.view.View
 import androidx.navigation.fragment.navArgs
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.cloudfy.warInstructions.R
 import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.content.adapter.ContentAdapter
@@ -29,12 +29,12 @@ class ContentFragment : BaseFragment(), ContentView {
         if (paragraphs.isEmpty()) {
             presenter.getData(args)
         }
-
     }
 
     private fun initList() {
-        val layoutManager = GridLayoutManager(activity, 1)
+        val layoutManager = LinearLayoutManager(context)
         rvContent.layoutManager = layoutManager
+        rvContent.setHasFixedSize(true)
         contentAdapter = ContentAdapter(
             activity = activity!!,
             items = paragraphs

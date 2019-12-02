@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +15,8 @@ public abstract class BaseRecyclerAdapter<E, VH extends BaseRecyclerAdapter.View
     public String LOG_TAG = "";
     private List<E> list;
     private LayoutInflater inflater;
+
+
 
     public BaseRecyclerAdapter() {
         list = new ArrayList<>();
@@ -163,5 +166,7 @@ public abstract class BaseRecyclerAdapter<E, VH extends BaseRecyclerAdapter.View
             super(itemView);
         }
     }
+
+
 
 }
