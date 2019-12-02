@@ -99,7 +99,7 @@
 					"Después de inumerables acciones sostenidas por las numerosas escuadras que se organizaban contra sus enemigos, que esran muchos y poderosos, por los cuales tenían que sostener una continua vigilancia, porque sin cesar se guerreaba entonces por tierra y por mar, llega, por fin, la unión de los Reinos de Aragon y de Castilla, , y consolidada poco después España en una sola Monarquía, forman las marinas de los diferentes Reinos unidos la entidad denominada Armada Española. Desde aquí en adelante la nación en que los marinos cántabros rivalizan con los andaluces, y unos y otros con los catalanes, valencianos, aragoneses y mallorquines, es una, España, y su Marina, una también, la Armada Española",
 					"Por aquel tiempo, en los alrededores del año 1500, es cuando se realiza la admirable epopeya de nuestros descubrimientos, en la cuál al nombre de Cristóbal Colon se unen los de otros navegantes y exploradores españoles de no menos valor y genio, cuyas proezas en América y otras tierras causan la admiración y el asombro de cuántos las conocen. Si Cristóbal Colón no fué español, fué como tal a descubrir América, con la fe y el dinero de los españoles y con tripulaciones españolas. Y después de su descubrimiento se inició una corriente tan impetuosa y tan constante de exploradores nacidos en Esdpaña, que en cien años hicieron más en América que todas las otras naciones de Europa juntas en trescientos.",
 					"Entre ellos destacan: Hernando 'Cortés, conquistad(Jr Méjico; Francisco Pizarro, 'del Perú; Pedro de Valdivia, de chile; Pedro de Alvarado, de Guatemala; Juan Ponce de León, descubridor de La Florida; Juan Sebastián Elcano, el primero, que dió la vuelta al mundo; Vasco Núñez de Balboa, descubridor del Océano pacífico; Vicente Yáñez Pinzón, que descubrió las costas del Brasil, y muchisimos otros, gracias a los cuales llegó a ser una Inmensa posesión española el continente que hoy forman veinte naciones civilizadas.",
-					"Y no fué sólo en América en donde España extendió su poderío:\\na Oceanía, Africa y Asia también llegaron los navegantes españoles, consiguiendo ensanchar siempre los dominios de sus Soberanos, en los cuales tiempo hubo en que «no se ponío el sol», según frase consagrada por la Historia. Siempre tenía entonces España bajo la luz del sol algún territorio.",
+					"Y no fué sólo en América en donde España extendió su poderío a Oceanía, Africa y Asia también llegaron los navegantes españoles, consiguiendo ensanchar siempre los dominios de sus Soberanos, en los cuales tiempo hubo en que «no se ponío el sol», según frase consagrada por la Historia. Siempre tenía entonces España bajo la luz del sol algún territorio.",
 					"En esta misma época y en otras posteriores recorre la Bandera española todos los océanos en expediciones cíentíficas o militares, extendiendo por doquier la civilización y la cultura y admirando al mundo con sus hechos de armas. Son ejemplo de ellos la conquista de Orán„ ean año 1510, organizada por el Cardenal Cisneros. y dirigida por el Almirante Pedro Navarro, en la que se hicieron a los moros 4.000 muertos y más de 5.000 prisioneros. La toma de Túnez, en .1535, en la que se pusieron en libertad 10.000 cristianos y se ganaron 300 cañones.",
 					"El combate de Lepanto, en 1571, por el que quedó abatido el poder de los turcos por nuestra Armada, mandada por Don Juan de Austria, y en que tomaron parte otros famosos capitanes y hombres célebres, como Alvaro de Bazán, Requeséns y Miguel de Cervantes, gloria literaria de nuestra Patria, que fué herido en dicha acción. El victorioso combate naval de las islas Terceras (1582)"
 				]
@@ -511,52 +511,37 @@
 				"title": "Idea general sobre el fenómeno  del tiro",
 				"index": 2,
 				"paragraphs": [
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					""
+					"La inflamación de la pólvora la convierte en gases que, al dlatarse, ejercen fortísima presión sobre la bala, obligándola a salir del cañón con gran velocidad y con un movimiento de rotación análogo al de un tornillo en su tuerca, a causa de las estrías interiores, que aquél tiene.",
+					"Al movimiento del proyectil fuera del arma se opone la atmósfera con su resistencia, prodiciendo el efecto de aminorar la velocidad de la bala. La resistencia del aire varia con su densidad, con la superficie del proyectil y con la velocidad de éste siendo tanto mayor cuanto mayores sean éstas. La forma de la bala influye también en dicha resistencia, sabiéndose que la cilindro-ojival es la mejor para disminuirla.  ",
+					"Con el nombre de gravedad se designa la causa o fuerza que constantemente determina la caída hacia el centro de la tierra de todos los cuerpos que se encuentran sin apoyo que los retenga. El proyectil tiende, pues, continuamente a caer por efecto de esa fuerza.",
+					"Si el proyectil no estuviera sometido a más fuerza que la proyección, se movería siempre en la msma dirección de la línea de tiro. Si, además de esta fuerza, solamente actuase la resistencia del aire, el proyectil seguría moviendose en dicha línea, aunque su alcance sería menor. Pero al actual la gravedad la trayectoria se hace curvilínea, obligando al proyectil a acercarse más cada vez a tierra."
 				]
 			},
 			{
 				"title": "Manejo del alza",
 				"index": 3,
 				"paragraphs": [
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					""
+					"Con el fusil individual se emplea el alza abatida hasta los 300 metros, dirigiendo la visual por la muesca de su pie. De 400 a 2000 metros se levantará el marco del alza y se desplazará la corredera hasta enrasar con la graduación correspondiente a la distanciausándose entonces la muesca de mira de la corredera para hacer pasar por ella la visual.",
+					"Debe tenerse presente:",
+					"Primero. Que las graduaciones del alza estan en hectómetros, osea en cientos de metros; si la distancia es 1800 metros se enrasará la corredera con la graduación 18; si la distancia es 900 metros, se enrasará con el número 9; etc.",
+					"Segundo. Las graduaciones pares están de uno de los largueros del marco, y las impares en el otro",
+					"Tercero. Cuando la diistancia de tiro esté comprendida entre dos centenas, se enrasará la correspondiente a la más próxima; por ejemplo: si la distancia fues 770 metros, comprendida entre los hectómetros 7 y 8 se enrasará la corredera con el 8. "
+				]
+			},
+			{
+				"title": "Posiciones del tirador",
+				"index": 5,
+				"paragraphs": [
+					"Las posiciones para tirar con el fusil o mosquetón pueden ser: en pie, sentado, rodilla en tierra y tendido.",
+					"En todas las posiciones debe procurarse, utilizando, si es preciso, objetos próximos o los accidentes del terreno, conseguir el máximo de estabilidad con el mínimo de fatiga, buscando cada uno la postura más cómoda, siempre que pueda dominarse bien con la vista al objetivo.",
+					"La posición de pie es la que permite tirar más rapidamente; pero es la más vulnerable y la que favorece menos la precisión de tiro.",
+					"La posición de tendido, aunque no permite una gran rapidéz de carga, y, por lo tanto, de tiro, es la menos vulnerable y fatigosa para el marinero, y debe ser, por lo tanto, la posición normal del tirador en el combate cuando el terreno es descubierto. En ella es más fácil también obtener apoyo para el arma, lo que permite lograr una mayor precisión en el tiro.",
+					"La posición de sentado es más vulnerable que la de tendido, pero más cómoda que ésta para la carga y para el fuego.",
+					"La posición de rodilla en tierra presenta mayor visibilidad y es más fatigosa que la de sentado; pero la rapidez de carga es todavía mayor que en esta últma.",
 				]
 			},
 			{
 				"title": "Cargar y montar el arma",
-				"index": 5,
-				"paragraphs": [
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					""
-				]
-			},
-			{
-				"title": "Poner el seguro",
 				"index": 6,
 				"paragraphs": [
 					"",
@@ -588,7 +573,7 @@
 				]
 			},
 			{
-				"title": "Graduar el alza",
+				"title": "Poner el seguro",
 				"index": 8,
 				"paragraphs": [
 					"",
@@ -604,7 +589,7 @@
 				]
 			},
 			{
-				"title": "Apuntar",
+				"title": "Graduar el alza",
 				"index": 9,
 				"paragraphs": [
 					"",
@@ -620,7 +605,7 @@
 				]
 			},
 			{
-				"title": "Retirar las armas estando apuntadas",
+				"title": "Apuntar",
 				"index": 10,
 				"paragraphs": [
 					"",
@@ -636,7 +621,7 @@
 				]
 			},
 			{
-				"title": "Hacer fuego",
+				"title": "Retirar las armas estando apuntadas",
 				"index": 11,
 				"paragraphs": [
 					"",
@@ -652,7 +637,7 @@
 				]
 			},
 			{
-				"title": "Descargar el fusil o mosquetón",
+				"title": "Hacer fuego",
 				"index": 12,
 				"paragraphs": [
 					"",
@@ -668,8 +653,24 @@
 				]
 			},
 			{
-				"title": "Descansar el arma",
+				"title": "Descargar el fusil o mosquetón",
 				"index": 13,
+				"paragraphs": [
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Descansar el arma",
+				"index": 14,
 				"paragraphs": [
 					"",
 					"",
