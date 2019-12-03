@@ -530,18 +530,34 @@
 			},
 			{
 				"title": "Posiciones del tirador",
-				"index": 5,
+				"index": 4,
 				"paragraphs": [
 					"Las posiciones para tirar con el fusil o mosquetón pueden ser: en pie, sentado, rodilla en tierra y tendido.",
 					"En todas las posiciones debe procurarse, utilizando, si es preciso, objetos próximos o los accidentes del terreno, conseguir el máximo de estabilidad con el mínimo de fatiga, buscando cada uno la postura más cómoda, siempre que pueda dominarse bien con la vista al objetivo.",
 					"La posición de pie es la que permite tirar más rapidamente; pero es la más vulnerable y la que favorece menos la precisión de tiro.",
 					"La posición de tendido, aunque no permite una gran rapidéz de carga, y, por lo tanto, de tiro, es la menos vulnerable y fatigosa para el marinero, y debe ser, por lo tanto, la posición normal del tirador en el combate cuando el terreno es descubierto. En ella es más fácil también obtener apoyo para el arma, lo que permite lograr una mayor precisión en el tiro.",
 					"La posición de sentado es más vulnerable que la de tendido, pero más cómoda que ésta para la carga y para el fuego.",
-					"La posición de rodilla en tierra presenta mayor visibilidad y es más fatigosa que la de sentado; pero la rapidez de carga es todavía mayor que en esta últma.",
+					"La posición de rodilla en tierra presenta mayor visibilidad y es más fatigosa que la de sentado; pero la rapidez de carga es todavía mayor que en esta últma."
 				]
 			},
 			{
 				"title": "Cargar y montar el arma",
+				"index": 5,
+				"paragraphs": [
+					"Se efectuaran estos movimientos al oir las voces siguientes:\nPrimera -> 'Carguen'. \nSegunda -> 'Armas'.",
+					"A la segunda voz, suponiendo el depósito descargado y el arma descansada, se levantará el fusil o mosquetón con la mano derecha, hasta que ésta quede a la altura del hombro e iinmediata a él; la mano izquiierda tomará el fusil por la caja, a la altura del alza, con el dedo pulgar tendido a lo largo de aquella; al propio tiempo se girará sobre el talón del pie izquierdo, hasta que la punta quede del frente, llevando el derecho unos veinticinco centimetros a retaguardia y a la derecha. Se dejará caer el fusil o mosquetón, descansando su caja en la mano izquierda y acompañado por la derecha hasta que se encuentre en posición horizontal y a la altura de la tetilla. Si el seguro estuviese puesto, se quitará",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			{
+				"title": "Poner el seguro",
 				"index": 6,
 				"paragraphs": [
 					"",
@@ -573,7 +589,7 @@
 				]
 			},
 			{
-				"title": "Poner el seguro",
+				"title": "Graduar el alza",
 				"index": 8,
 				"paragraphs": [
 					"",
@@ -589,7 +605,7 @@
 				]
 			},
 			{
-				"title": "Graduar el alza",
+				"title": "Apuntar",
 				"index": 9,
 				"paragraphs": [
 					"",
@@ -605,7 +621,7 @@
 				]
 			},
 			{
-				"title": "Apuntar",
+				"title": "Retirar las armas estando apuntadas",
 				"index": 10,
 				"paragraphs": [
 					"",
@@ -621,7 +637,7 @@
 				]
 			},
 			{
-				"title": "Retirar las armas estando apuntadas",
+				"title": "Hacer fuego",
 				"index": 11,
 				"paragraphs": [
 					"",
@@ -637,7 +653,7 @@
 				]
 			},
 			{
-				"title": "Hacer fuego",
+				"title": "Descargar el fusil o mosquetón",
 				"index": 12,
 				"paragraphs": [
 					"",
@@ -653,24 +669,8 @@
 				]
 			},
 			{
-				"title": "Descargar el fusil o mosquetón",
-				"index": 13,
-				"paragraphs": [
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					"",
-					""
-				]
-			},
-			{
 				"title": "Descansar el arma",
-				"index": 14,
+				"index": 13,
 				"paragraphs": [
 					"",
 					"",
