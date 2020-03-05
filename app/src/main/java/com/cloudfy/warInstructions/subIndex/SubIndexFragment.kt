@@ -2,6 +2,7 @@ package com.cloudfy.warInstructions.subIndex
 
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -12,7 +13,9 @@ import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.base.ConstantsManager
 import com.cloudfy.warInstructions.entities.Subchapter
 import com.cloudfy.warInstructions.subIndex.adapter.SubIndexAdapter
+import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.InterstitialAd
 import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.fragment_sub_index.*
 
@@ -21,6 +24,7 @@ class SubIndexFragment : BaseFragment(), SubIndexView {
         subIndexAdapter.addAll(subchapters)
     }
 
+    private lateinit var mInterstitialAd: InterstitialAd
     private lateinit var subIndexAdapter: SubIndexAdapter
     private var subChapters: ArrayList<Subchapter> = ArrayList()
     private val args: SubIndexFragmentArgs by navArgs()
@@ -29,9 +33,9 @@ class SubIndexFragment : BaseFragment(), SubIndexView {
 
 
     override fun viewCreated(view: View?) {
-        MobileAds.initialize(activity, "ca-app-pub-1767954011690390~3917587805")
-        val adRequest = AdRequest.Builder().build()
-        adView.loadAd(adRequest)
+        initAdds()
+        initInterstitial()
+        setInterstitialListener()
         setToolbarTitle(args.title)
         showToolbar(true)
         initList()
@@ -57,10 +61,38 @@ class SubIndexFragment : BaseFragment(), SubIndexView {
                 activity = activity!!,
                 items = subChapters
             ) {
+                if (mInterstitialAd.isLoaded) {
+                    mInterstitialAd.show()
+                } else {
+                    Log.d("TAG", "The interstitial wasn't loaded yet.")
+                }
                 bundle.putStringArray(ConstantsManager.PHARAGRAPHS, it.paragrahps.toTypedArray())
                 bundle.putString(ConstantsManager.TOOLBAR_TITLE, it.title)
                 this.findNavController().navigate(R.id.goToContentFragment, bundle)
             }
+    }
+
+    private fun setInterstitialListener() {
+        mInterstitialAd.adListener = object : AdListener() {
+            override fun onAdClosed() {
+                mInterstitialAd.loadAd(AdRequest.Builder().build())
+            }
+
+            override fun onAdLoaded() {
+                super.onAdLoaded()
+                showProgress(show = false, hasShade = false)
+            }
+        }
+    }
+
+    private fun initAdds() {
+        MobileAds.initialize(context)
+    }
+
+    private fun initInterstitial() {
+        mInterstitialAd = InterstitialAd(context)
+        mInterstitialAd.adUnitId = "ca-app-pub-1767954011690390/1821106455"
+        mInterstitialAd.loadAd(AdRequest.Builder().build())
     }
 
 

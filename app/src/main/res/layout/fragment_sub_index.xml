@@ -12,7 +12,6 @@
             android:layout_height="0dp"
             tools:listitem="@layout/index_item"
             android:overScrollMode="never"
-            app:layout_constraintBottom_toTopOf="@id/adView"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -20,14 +19,5 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            ads:adSize="SMART_BANNER"
-            ads:layout_constraintBottom_toBottomOf="parent"
-            ads:adUnitId="ca-app-pub-1767954011690390~3917587805">
-    </com.google.android.gms.ads.AdView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
