@@ -4,17 +4,20 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
         android:elevation="4dp"
+        android:gravity="center"
+        android:padding="@dimen/space_small"
         android:theme="@style/ToolbarTheme"
 
         >
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:padding="@dimen/space_small"
             android:text="@string/test"
-            android:fontFamily="@font/open_sans_regular"
-            android:textSize="@dimen/medium_font"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="12sp"
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:gravity="center"

@@ -2,7 +2,7 @@
 <resources>
     <dimen name="space_medium">20dp</dimen>
     <dimen name="space_medium_small">10dp</dimen>
-
+    <dimen name="min_space">1.7dp</dimen>
     <dimen name="medium_big_font">25sp</dimen>
     <dimen name="big_space">120dp</dimen>
     <dimen name="biggest_space">250dp</dimen>

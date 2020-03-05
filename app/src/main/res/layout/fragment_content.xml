@@ -11,8 +11,5 @@
             android:id="@+id/rvContent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fadeScrollbars="false"
-            android:scrollbarSize="@dimen/space_small"
-            android:scrollbarThumbVertical="@drawable/scroll_shape"
-            android:scrollbars="vertical" />
+            android:scrollbarSize="@dimen/space_small"/>
 </LinearLayout>

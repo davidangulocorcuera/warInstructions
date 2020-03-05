@@ -12,6 +12,8 @@ import com.cloudfy.warInstructions.base.BaseFragment
 import com.cloudfy.warInstructions.base.ConstantsManager
 import com.cloudfy.warInstructions.entities.Subchapter
 import com.cloudfy.warInstructions.subIndex.adapter.SubIndexAdapter
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.fragment_sub_index.*
 
 class SubIndexFragment : BaseFragment(), SubIndexView {
@@ -27,6 +29,9 @@ class SubIndexFragment : BaseFragment(), SubIndexView {
 
 
     override fun viewCreated(view: View?) {
+        MobileAds.initialize(activity, "ca-app-pub-1767954011690390~3917587805")
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
         setToolbarTitle(args.title)
         showToolbar(true)
         initList()

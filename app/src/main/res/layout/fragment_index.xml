@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         tools:context=".index.IndexFragment"
-        >
+        android:background="@color/colorGreySuperLight"
+        android:orientation="vertical">
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvIndex"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            tools:listitem="@layout/index_item"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toTopOf="@id/adView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             >
 
     </androidx.recyclerview.widget.RecyclerView>
 
-</FrameLayout>
+    <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:adUnitId="ca-app-pub-1767954011690390/6028799726">
+    </com.google.android.gms.ads.AdView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        style="@style/Clickable"
+        style="@style/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-
-            >
 
         <LinearLayout
                 android:layout_width="match_parent"
@@ -18,14 +11,12 @@
                 android:minHeight="85dp"
                 android:orientation="horizontal"
                 android:padding="@dimen/space_medium"
-
-
                 >
 
             <ImageView
                     android:id="@+id/ivStartIcon"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_vertical"
                     android:layout_marginEnd="@dimen/space_medium"
                     android:src="@drawable/ic_book"
@@ -39,14 +30,8 @@
                     android:fontFamily="@font/open_sans_regular"
                     android:letterSpacing="0.01"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/medium_font"
+                    android:textSize="16sp"
                     tools:text="La patria y la bandera." />
         </LinearLayout>
-
-        <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/transparentBlack" />
-    </LinearLayout>
 
 </androidx.cardview.widget.CardView>

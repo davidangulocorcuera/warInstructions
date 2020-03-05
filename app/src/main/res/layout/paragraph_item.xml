@@ -15,8 +15,9 @@
             android:letterSpacing="0.05"
             android:lineSpacingExtra="3dp"
             android:paddingStart="@dimen/space_medium"
+            android:overScrollMode="never"
             android:paddingEnd="@dimen/space_medium"
             android:text="@string/example_text"
             android:textColor="@color/black"
-            android:textSize="@dimen/medium_small_font" />
+            android:textSize="14sp" />
 </LinearLayout>
